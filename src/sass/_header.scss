@@ -1,0 +1,154 @@
+.header {
+  // background-image: url('../images/abstract-background-with-red-lines_mob_1x.jpg');
+  // background-position: center;
+  // background-size: cover;
+  background-color: grey;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  padding: 50px 0 40px;
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url('../images/abstract-background-with-red-lines_mob_2x.jpg');
+  // }
+
+  @media screen and (min-width: $widthTablet) {
+    padding: 70px 0 60px;
+    // background-image: url('../images/abstract-background-with-red-lines_tab_1x.jpg');
+    // padding: 60px 0;
+
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url('../images/abstract-background-with-red-lines_tab_2x.jpg');
+    // }
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  color: $primaryColor;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.logo-name {
+  pointer-events: none;
+}
+
+.navigation {
+  margin-left: auto;
+  @media (max-width: $widthTablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  @media (max-width: $widthTablet) {
+    gap: 20px;
+  }
+}
+
+.nav_item {
+  color: $primaryColor;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $accentColor;
+  }
+
+  @media (max-width: $widthTablet) {
+    display: none;
+  }
+}
+
+// .nav_item:hover {
+//   transform: scale(1.1);
+// }
+
+// .nav_item--current::after {
+//   content: '';
+//   color: $accentColor;
+//   right: 0;
+//   bottom: -1px;
+//   display: block;
+//   width: 100%;
+//   height: 4px;
+//   background-color: currentColor;
+//   opacity: 1;
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    stroke: $accentColor;
+    fill: $accentColor;
+  }
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.icon_menu {
+  width: 20px;
+  height: 20px;
+  @media (min-width: $widthTablet) {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;
+    fill: $accentColor;
+    stroke: $accentColor;
+  }
+}
+
+.nav_list_button {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nav_button {
+  width: 130px;
+  @media (min-width: $widthTablet) {
+    width: 152px;
+  }
+  @media (min-width: $widthDesktop) {
+    width: 152px;
+  }
+}
+
+// svg:not(:root) {
+//   overflow: visible;
+// }
