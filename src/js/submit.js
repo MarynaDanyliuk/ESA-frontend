@@ -1,5 +1,10 @@
 import { refs } from './refs';
 
+// import { BASE_URL_BACK } from '';
+// const { BASE_URL_BACK } = process.env;
+
+// console.log(BASE_URL_BACK)
+
 (() => {
   refs.form.addEventListener('submit', e => {
     e.preventDefault();
@@ -44,7 +49,7 @@ import { refs } from './refs';
 
     console.log(formData);
     try {
-      const response = fetch('http://localhost:3000/submitForm', {
+      const response = fetch('https://esa-backend.vercel.app/submitForm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
