@@ -1,14 +1,11 @@
 import { refs } from './refs';
 
-// import { BASE_URL_BACK } from '';
-// const { BASE_URL_BACK } = process.env;
-
-// console.log(BASE_URL_BACK)
+const { BASE_URL_BACK } = process.env;
 
 (() => {
-  refs.form.addEventListener('submit', e => {
+  refs.form.addEventListener('submit', async e => {
     e.preventDefault();
-
+    const form = document.querySelector('.js-submit-form');
     const country = document.getElementById('country').value;
     const city = document.getElementById('city').value;
     const info = document.getElementById('info').value;
@@ -49,46 +46,27 @@ import { refs } from './refs';
 
     console.log(formData);
     try {
-      const response = fetch('https://esa-backend.vercel.app/submitForm', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      // console.log(response);
-
-      // if (response.ok) {
-      //   console.log('Лист успішно відправлено');
-      //   clearForm();
-      // } else {
-      //   console.error('Помилка відправки листа', response.statusText);
-      // }
-
-      clearForm();
+      const response = await fetch(
+        'https://esa-backend.vercel.app/submitForm',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (response.ok) {
+        form.reset();
+        console.log('Лист успішно відправлено');
+      } else {
+        throw new Error('Помилка при відправці форми');
+      }
     } catch (error) {
       console.error('Помилка відправки листа:', error);
     }
   });
 })();
-
-function clearForm() {
-  // Отримуємо доступ до полів форми
-  const form = document.querySelector('.js-submit-form');
-  const formInputs = form.querySelectorAll('.form__input');
-  const checkboxes = form.querySelectorAll('.checkbox__input');
-
-  // Очищуємо значення полів вводу
-  formInputs.forEach(function (input) {
-    input.value = '';
-  });
-
-  // Знімаємо прапорці у всіх чекбоксів
-  checkboxes.forEach(function (checkbox) {
-    checkbox.checked = false;
-  });
-}
 
 // console.log('Країна:', country);
 // console.log('Місто:', city);
@@ -101,3 +79,21 @@ function clearForm() {
 // console.log('Вибрані категорії:', categories);
 // console.log('Вибрані статуси:', statuses);
 // clearForm();
+
+// function clearForm() {
+//   // Отримуємо доступ до полів форми
+//   const form = document.querySelector('.js-submit-form');
+//   form.reset();
+//   const formInputs = form.querySelectorAll('.form__input');
+//   const checkboxes = form.querySelectorAll('.checkbox__input');
+//   comment.value = '';
+//   // Очищуємо значення полів вводу
+//   formInputs.forEach(function (input) {
+//     input.value = '';
+//   });
+
+//   // Знімаємо прапорці у всіх чекбоксів
+//   checkboxes.forEach(function (checkbox) {
+//     checkbox.checked = false;
+//   });
+// }
