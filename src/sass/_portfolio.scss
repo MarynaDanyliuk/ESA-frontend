@@ -5,11 +5,11 @@
   align-items: center;
 
   gap: 16px;
-  // background-color: aquamarine;
 
   @media screen and (min-width: $widthTablet) {
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+
     justify-content: space-around;
   }
 }
@@ -19,17 +19,13 @@
   justify-content: center;
   align-items: center;
 
-  width: 100%;
-  max-width: 374px;
-  height: 100%;
+  max-width: 494px;
 
-  // background-color: yellowgreen;
+  // height: 334px;
 
   &__link {
-    // border-radius: 4px;
-    // background-color: aqua;
     border-radius: 10px;
-    background-color: var(--button-filter-bg-color);
+
     text-decoration: none;
 
     display: inline-block;
@@ -54,12 +50,20 @@
   &__image {
     width: 100%;
     max-width: 374px;
-    height: 335px;
+    height: 235px;
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
     object-fit: cover;
+    @media screen and (min-width: $widthTablet) {
+      width: 374px;
+      height: 235px;
+    }
+    @media screen and (min-width: $widthDesktop) {
+      width: 494px;
+      height: 335px;
+    }
   }
 
   &__overlay {
@@ -103,7 +107,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-txt-color);
+    color: $primaryTextColor;
     margin-bottom: 4px;
   }
 
@@ -112,6 +116,6 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: var(--primary-txt-color);
+    color: $primaryTextColor;
   }
 }

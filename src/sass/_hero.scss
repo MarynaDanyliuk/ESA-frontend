@@ -1,10 +1,10 @@
 .hero {
-  // width: 100%;
-  // height: 100%;
-  // background-color: var(--accent-bg-color);
-  // text-align: center;
-  // padding-top: 118px;
-  // padding-bottom: 118px;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: $widthDesktop) {
     // padding-top: 200px;
@@ -68,31 +68,59 @@
   }
 
   &__title {
-    padding-top: 70px;
+    // padding-top: 70px;
     color: $accentColor;
-    font-weight: 900;
-    font-size: 26px;
+    font-weight: 700;
+    font-size: 24px;
     line-height: 1.62;
     text-align: center;
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 
     @media screen and (min-width: $widthDesktop) {
-      font-size: 44px;
+      font-size: 40px;
+      line-height: 1.36;
+    }
+  }
+
+  &__list {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: $primaryTextColor;
+  }
+
+  &__item {
+    font-size: 18px;
+    max-width: 474px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $widthDesktop) {
+      font-size: 24px;
+      max-width: 574px;
       line-height: 1.36;
     }
   }
 
   &__wrapper {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__wrapper:hover {
-    transform: scale(1.1);
-  }
+  // &__wrapper:hover {
+  //   transform: scale(1.1);
+  // }
 }
 
 //   background-color: #c4c4c4;

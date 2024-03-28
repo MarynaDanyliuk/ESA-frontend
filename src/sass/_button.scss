@@ -13,6 +13,31 @@
   text-transform: uppercase;
 }
 
+.btn-hero {
+  border: 1px solid $accentColor;
+  color: white;
+  background-color: $accentColor;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $accentColor;
+    background-color: $accentColor;
+    color: $primaryColor;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transform: scale(1.07);
+  }
+
+  width: 100%;
+  max-width: 180px;
+  height: 44px;
+}
+
 .btn-modal {
   border: 1px solid $textColor;
   color: $textColor;
@@ -31,12 +56,6 @@
   width: 100%;
   max-width: 140px;
   height: 44px;
-  // @media (min-width: $widthTablet) {
-  //   max-width: 160px;
-  // }
-  // @media (min-width: $widthDesktop) {
-
-  // }
 }
 
 .white {
