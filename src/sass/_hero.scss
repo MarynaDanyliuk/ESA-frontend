@@ -67,20 +67,14 @@
     }
   }
 
-  &__overlay:hover {
-    color: aqua;
-    fill: aqua;
-    cursor: pointer;
-  }
-
   &__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: var(--hero-txt-color);
+    padding-top: 70px;
+    color: $accentColor;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -88,6 +82,16 @@
       font-size: 44px;
       line-height: 1.36;
     }
+  }
+
+  &__wrapper {
+    text-align: center;
+    margin-top: 60px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__wrapper:hover {
+    transform: scale(1.1);
   }
 }
 
