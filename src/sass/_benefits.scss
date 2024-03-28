@@ -1,11 +1,11 @@
 .benefit-list {
   display: grid;
-  grid-gap: 16px;
+  grid-gap: 30px;
   justify-content: center;
 
   @media screen and (min-width: $widthTablet) {
     grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-    grid-gap: 16px;
+    grid-gap: 26px;
   }
 
   &__item {
@@ -46,8 +46,10 @@
   }
 
   &__description {
+    // max-width: 100%;
     margin-top: 0;
     color: var(--primary-txt-color);
+    font-size: 14px;
     line-height: 1.71;
     text-align: justify;
   }
