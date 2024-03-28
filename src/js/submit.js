@@ -1,6 +1,6 @@
 import { refs } from './refs';
 
-const { BASE_URL_BACK } = process.env;
+// const { BASE_URL_BACK } = process.env;
 
 (() => {
   refs.form.addEventListener('submit', async e => {
