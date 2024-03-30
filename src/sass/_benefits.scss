@@ -5,13 +5,8 @@
   align-items: center;
 
   gap: 30px;
-  // display: grid;
-  // grid-gap: 30px;
-  // justify-content: center;
 
   @media screen and (min-width: $widthTablet) {
-    // grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-    // grid-gap: 26px;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -29,18 +24,12 @@
     background-color: rgba(179, 176, 176, 0.149);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-
-    // @media screen and (min-width: $widthTablet) {
-    //   // max-width: 100%;
-    // }
   }
 
   &__canvas {
     display: flex;
     padding: 10px 0;
     width: 100%;
-    // height: 120px;
-    // margin-bottom: 30px;
     justify-content: center;
     align-items: center;
   }
