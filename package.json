@@ -6,6 +6,7 @@
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ESA-frontend/",
+    "parcel build": "parcel build src/*.html --public-url /ESA-frontend/",
     "start:dev": "nodemon server"
   },
   "repository": {
