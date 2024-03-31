@@ -62,42 +62,6 @@
     }
   }
 
-  &__image--thumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 260px;
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    max-width: 474px;
-    height: 260px;
-
-    border-radius: 10px;
-    object-fit: cover;
-
-    @media screen and (min-width: $widthTablet) {
-      width: 474px;
-    }
-  }
-
-  // &__thumb--wrapper {
-  // }
-
-  .hero__thumb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    @media screen and (min-width: $widthTablet) {
-      flex-direction: row-reverse;
-      // justify-content: space-between;
-    }
-  }
-
   &__title {
     position: relative;
 
@@ -122,6 +86,42 @@
     }
   }
 
+  &__thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (min-width: $widthTablet) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 474px;
+    height: 260px;
+
+    border-radius: 10px;
+    object-fit: cover;
+
+    @media screen and (min-width: $widthTablet) {
+      width: 474px;
+      height: 360px;
+    }
+  }
+
+  &__image--thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 260px;
+    @media screen and (min-width: $widthTablet) {
+      height: 360px;
+    }
+  }
+
   &__list {
     // visibility: hidden;
     // ____________________________
@@ -129,7 +129,7 @@
     font-weight: 600;
     font-size: 18px;
     text-align: start;
-    padding: 0 30px;
+    padding: 0 20px;
 
     display: flex;
     flex-direction: column;
@@ -166,21 +166,3 @@
     }
   }
 }
-
-//   background-color: #c4c4c4;
-//   background-color: #c4c4c4;
-// background-position: center;
-// background-size: 768px 400px;
-// background-size: 480px 400px;
-// linear-gradient(
-//               to right,
-//               rgba(47, 48, 58, 0.4),
-//               rgba(47, 48, 58, 0.4)
-//             ),
-//             url(../images/BlankMap-World.svg.png);
-
-// max-width: 768px;
-// height: 400px;
-// margin-left: auto;
-// margin-right: auto;
-// height: 600px;
