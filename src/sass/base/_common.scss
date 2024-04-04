@@ -19,7 +19,7 @@ body.lock {
 
 a {
   text-decoration: none;
-  color: inherit;
+  // color: inherit;
 }
 
 h1,
@@ -37,6 +37,11 @@ ul {
 
 img {
   display: block;
+}
+
+link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .not-visible {

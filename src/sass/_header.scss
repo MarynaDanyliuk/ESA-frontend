@@ -54,7 +54,6 @@
 .navigation {
   margin-left: auto;
   @media (max-width: $widthTablet) {
-    // margin-bottom: 20px;
   }
 }
 
@@ -137,13 +136,55 @@
   }
 }
 
-// svg:not(:root) {
-//   overflow: visible;
-// }
+/* Стилі для основного посилання */
+.menu {
+  position: relative;
 
-// .nav_item:hover {
-//   transform: scale(1.1);
-// }
+  cursor: pointer;
+}
+
+.menu__link {
+  display: inline-block;
+  color: $primaryColor;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.sub-menu__list {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 12px; /* Відступ від верху батьківського елемента */
+  left: -12px; /* Зміщення зліва */
+
+  display: none;
+  padding: 12px;
+}
+
+/* Стилі для рамки меню */
+.menu:hover .sub-menu__list {
+  display: block;
+}
+
+.sub-menu__list > li {
+  background-color: grey;
+  border: 1px solid $primaryColor;
+  border-radius: 10px;
+
+  // min-width: 70px;
+  color: $primaryColor;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 12px;
+  opacity: 0.8;
+}
 
 // .nav_item--current::after {
 //   content: '';
