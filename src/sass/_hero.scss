@@ -4,17 +4,21 @@
 
   margin-bottom: 30px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   &__overlay {
     width: auto;
-    height: auto;
-    margin-bottom: 30px;
-    // margin-left: auto;
-    // margin-right: auto;
+    height: 600px;
+
+    // margin-bottom: 30px;
 
     // background-image: url(../images/products/original.jpg);
     background-image: url(../images/world.svg);
     // background-image: url(../images/products/e-ihracat.png);
-    // background-color: #c4c4c4;
+    background-color: #c4c4c4;
     background-position: center;
     background-size: cover;
 
@@ -41,7 +45,6 @@
     }
 
     @media screen and (min-width: $widthDesktop) {
-      // height: 600px;
       background-size: cover;
       margin-left: auto;
       margin-right: auto;
@@ -63,7 +66,7 @@
   }
 
   &__title {
-    position: relative;
+    // position: relative;
 
     color: $accentColor;
     font-weight: 600;
@@ -74,6 +77,8 @@
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-bottom: 60px;
 
     @media screen and (min-width: $widthTablet) {
       font-size: 24px;
@@ -125,17 +130,18 @@
   &__list {
     // visibility: hidden;
     // ____________________________
-    position: relative;
+    // position: relative;
     font-weight: 600;
     font-size: 18px;
     text-align: start;
     padding: 0 20px;
+    margin-bottom: 60px;
 
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    color: $primaryTextColor;
-    width: 100%;
+    color: grey;
+    max-width: 600px;
     @media screen and (min-width: $widthTablet) {
       padding-left: 32px;
       padding-right: 0;
