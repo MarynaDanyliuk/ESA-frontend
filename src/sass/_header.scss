@@ -3,7 +3,8 @@
   // background-position: center;
   // background-size: cover;
   // background-color: rgb(100, 118, 215);
-  background-color: rgba(104, 105, 111, 0.771);
+  // background-color: rgba(104, 105, 111, 0.771);
+  background-color: $secondAccentColor;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   padding: 30px;
@@ -40,6 +41,7 @@
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 30px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {

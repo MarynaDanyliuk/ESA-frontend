@@ -2,12 +2,11 @@
   width: 100%;
   height: 100%;
 
-  margin-bottom: 30px;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
+  padding: 0 20px;
 
   &__overlay {
     width: auto;
@@ -17,8 +16,9 @@
 
     // background-image: url(../images/products/original.jpg);
     background-image: url(../images/world.svg);
+
     // background-image: url(../images/products/e-ihracat.png);
-    background-color: #c4c4c4;
+    // fill: #c4c4c4;
     background-position: center;
     background-size: cover;
 
@@ -66,11 +66,13 @@
   }
 
   &__title {
-    // position: relative;
-
+    margin-top: 40px;
+    background-color: $primaryColor;
     color: $accentColor;
+    padding: 4px 20px;
+    border-radius: 25px;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.62;
 
     text-align: center;
@@ -78,10 +80,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     @media screen and (min-width: $widthTablet) {
-      font-size: 24px;
+      margin-bottom: 60px;
       line-height: 1.36;
     }
 
@@ -91,56 +93,21 @@
     }
   }
 
-  &__thumb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    @media screen and (min-width: $widthTablet) {
-      flex-direction: row-reverse;
-    }
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    max-width: 474px;
-    height: 260px;
-
-    border-radius: 10px;
-    object-fit: cover;
-
-    @media screen and (min-width: $widthTablet) {
-      width: 474px;
-      height: 360px;
-    }
-  }
-
-  &__image--thumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 260px;
-    @media screen and (min-width: $widthTablet) {
-      height: 360px;
-    }
-  }
-
   &__list {
     // visibility: hidden;
     // ____________________________
     // position: relative;
     font-weight: 600;
     font-size: 18px;
+    line-height: 1.5;
     text-align: start;
-    padding: 0 20px;
+    // padding: 0 20px;
     margin-bottom: 60px;
 
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    color: grey;
+    // color: grey;
     max-width: 600px;
     @media screen and (min-width: $widthTablet) {
       padding-left: 32px;
@@ -154,7 +121,7 @@
   }
 
   &__item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -171,4 +138,48 @@
       transform: scale(1.1);
     }
   }
+
+  .phrase {
+    background-color: $secondAccentColor;
+    color: $primaryColor;
+    padding: 4px 10px;
+    border-radius: 15px;
+  }
+
+  // _______________________
+  //   &__thumb {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  //   align-items: center;
+  //   @media screen and (min-width: $widthTablet) {
+  //     flex-direction: row-reverse;
+  //   }
+  // }
+
+  // &__image {
+  //   display: block;
+  //   width: 100%;
+  //   max-width: 474px;
+  //   height: 260px;
+
+  //   border-radius: 10px;
+  //   object-fit: cover;
+
+  //   @media screen and (min-width: $widthTablet) {
+  //     width: 474px;
+  //     height: 360px;
+  //   }
+  // }
+
+  // &__image--thumb {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   height: 260px;
+  //   @media screen and (min-width: $widthTablet) {
+  //     height: 360px;
+  //   }
+  // }
 }
