@@ -152,6 +152,13 @@
     }
   }
 
+  .rotate {
+    transform: rotate(-1.5deg); /* змініть кут нахилу за потреби */
+    display: inline-block;
+    background-color: $primaryColor;
+    color: $secondAccentColor;
+  }
+
   // _______________________
   //   &__thumb {
   //   display: flex;
