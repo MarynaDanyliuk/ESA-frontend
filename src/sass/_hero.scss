@@ -76,40 +76,49 @@
     margin-bottom: 40px;
 
     @media screen and (min-width: $widthTablet) {
-      font-size: 40px;
+      font-size: 32px;
       margin-bottom: 60px;
     }
 
     @media screen and (min-width: $widthDesktop) {
-      font-size: 44px;
+      font-size: 38px;
     }
   }
 
   &__list {
-    // visibility: hidden;
-    // ____________________________
-    // position: relative;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.72;
     text-align: start;
-    // padding: 0 20px;
     margin-bottom: 60px;
 
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    // color: grey;
-    // max-width: 600px;
     @media screen and (min-width: $widthTablet) {
-      font-size: 20px;
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  &__list--tablet {
+    visibility: hidden;
+    display: none;
+    @media screen and (min-width: $widthTablet) {
+      visibility: visible;
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.72;
+      text-align: start;
+      margin-bottom: 60px;
+      font-size: 24px;
       padding-left: 32px;
       padding-right: 0;
     }
 
     @media screen and (min-width: $widthDesktop) {
-      font-size: 24px;
-      line-height: 1.36;
+      font-size: 30px;
     }
   }
 
@@ -135,8 +144,12 @@
   .phrase {
     background-color: $secondAccentColor;
     color: $primaryColor;
-    padding: 4px 10px;
+    padding: 4px 12px;
     border-radius: 15px;
+    @media screen and (min-width: $widthTablet) {
+      padding: 4px 18px;
+      border-radius: 25px;
+    }
   }
 
   // _______________________
