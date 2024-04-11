@@ -9,7 +9,7 @@
 
   &__overlay {
     width: auto;
-    height: 600px;
+    // height: 600px;
     background-image: url(../images/world.svg);
 
     background-position: center;
@@ -63,10 +63,10 @@
     background-color: $primaryColor;
     color: $accentColor;
     padding: 4px 20px;
-    border-radius: 25px;
+    border-radius: 45px;
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.62;
+    line-height: 1.72;
 
     text-align: center;
 
@@ -76,13 +76,12 @@
     margin-bottom: 40px;
 
     @media screen and (min-width: $widthTablet) {
+      font-size: 40px;
       margin-bottom: 60px;
-      line-height: 1.36;
     }
 
     @media screen and (min-width: $widthDesktop) {
-      font-size: 34px;
-      line-height: 1.36;
+      font-size: 44px;
     }
   }
 
@@ -92,7 +91,7 @@
     // position: relative;
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.72;
     text-align: start;
     // padding: 0 20px;
     margin-bottom: 60px;
@@ -101,8 +100,9 @@
     flex-direction: column;
     margin-bottom: 30px;
     // color: grey;
-    max-width: 600px;
+    // max-width: 600px;
     @media screen and (min-width: $widthTablet) {
+      font-size: 20px;
       padding-left: 32px;
       padding-right: 0;
     }
