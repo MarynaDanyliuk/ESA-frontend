@@ -20,10 +20,6 @@ body.lock {
 
 a {
   text-decoration: none;
-  color: inherit;
-}
-a:visited {
-  color: inherit;
 }
 
 h1,
@@ -79,6 +75,7 @@ link {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 20px;
   padding-bottom: 20px;
   @media screen and (min-width: $widthDesktop) {
     font-weight: 900;

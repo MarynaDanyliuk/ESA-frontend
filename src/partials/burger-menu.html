@@ -1,54 +1,56 @@
-<div class="menu-container">
+<div class="menu__container">
   <button id="close_burger_btn" class="menu-toggle">X</button>
-  <div class="menu-frame">
-    <ul class="mobile-menu">
-      <li class="mobile-menu__item">
-        <a href="./index.html" id="home_btn">Головна</a>
+  <div class="menu__frame">
+    <ul class="menu">
+      <li>
+        <a href="./index.html" id="home_btn" class="menu__link">Головна</a>
       </li>
-      <li class="mobile-menu__item">
-        <a href="./index.html" id="library_btn_menu" class="nav_item_menu"
+      <li>
+        <a href="./index.html" id="library_btn_menu" class="menu__link"
           >Продукція</a
         >
       </li>
-      <!-- <li class="mobile-menu__item">
-        <a href="#/projects" id="library_btn_menu" class="nav_item_menu"
-          >Види діяльності</a
-        >
-      </li> -->
-      <li class="mobile-menu__item">
-        <a href="#/request-form" id="library_btn_menu" class="nav_item_menu"
+      <li>
+        <a
+          href="./index.html#request-form"
+          id="library_btn_menu"
+          class="menu__link"
           >Форма запиту</a
         >
       </li>
     </ul>
-    <div class="hero__overlay">
+    <div class="menu__overlay">
       <svg class="burger__icon">
         <use href="./images/world.svg"></use>
       </svg>
     </div>
 
-    <div class="menu-bottom">
-      <ul class="mobile-contacts">
-        <li class="mobile-contacts__item">
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+    <div class="menu__bottom">
+      <ul class="menu__contacts">
+        <li>
+          <a href="tel:+380961111111" class="menu__contacts--link"
+            >+38 096 111 11 11</a
+          >
         </li>
-        <li class="mobile-contacts__item">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li>
+          <a href="mailto:info@devstudio.com" class="menu__contacts--link"
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
 
-      <ul class="mobile-social-net">
-        <li class="mobile-social-net__item">
-          <a href="" class="mobile-social-net__link">Instagram</a>
+      <ul class="menu__social-net">
+        <li>
+          <a href="#" class="menu__social-net--link">Instagram</a>
         </li>
-        <li class="mobile-social-net__item">
-          <a href="" class="mobile-social-net__link">Twitter</a>
+        <li>
+          <a href="#" class="menu__social-net--link">Twitter</a>
         </li>
-        <li class="mobile-social-net__item">
-          <a href="" class="mobile-social-net__link">Facebook</a>
+        <li>
+          <a href="#" class="menu__social-net--link">Facebook</a>
         </li>
-        <li class="mobile-social-net__item">
-          <a href="" class="mobile-social-net__link">LinkedIn</a>
+        <li>
+          <a href="#" class="menu__social-net--link">LinkedIn</a>
         </li>
       </ul>
     </div>

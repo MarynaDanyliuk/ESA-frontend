@@ -1,5 +1,4 @@
-.menu-container {
-  // background-image: url('../images/world.svg');
+.menu__container {
   background-color: $secondAccentColor;
 
   position: fixed;
@@ -8,14 +7,11 @@
   width: 100vw;
   height: 100vh;
 
-  z-index: 999;
-  // padding: 50px;
-
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-container.open {
+.menu__container.open {
   transform: translateX(0);
 }
 
@@ -51,101 +47,151 @@
   }
 }
 
-.menu-frame {
-  display: flex;
-  flex-direction: column;
+.menu__overlay {
+  width: auto;
+  height: 600px;
+  background-image: url(../images/world_w.svg);
 
-  // justify-content: space-around;
-  // width: calc(100% - 40px);
-  height: 100%;
-}
+  background-position: center;
+  background-size: cover;
 
-.mobile-menu {
-  padding: 30px 30px 0 30px;
-}
-
-.mobile-menu__item {
-  color: $primaryColor;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 18px;
-
-  &:hover,
-  &:focus {
-    color: $accentColor;
-  }
-}
-
-.menu-bottom {
-  padding: 0 30px 30px 30px;
-}
-
-.mobile-contacts {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-
-  &__item {
-    margin-bottom: 14px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-
-    &:hover,
-    &:focus {
-      color: $accentColor;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/world_w.svg);
     }
   }
-}
 
-.mobile-social-net {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: $widthTablet) {
+    background-image: url(../images/world_w.svg);
 
-  &__item {
-    position: relative;
-    margin-right: 16px;
-    &:last-child {
-      margin-right: 0;
-      ::after {
-        display: none;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/world_w.svg);
       }
     }
   }
 
+  @media screen and (min-width: $widthDesktop) {
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(../images/world_w.svg);
+
+    background-position: center;
+    // background-size: 1600px 600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/world_w.svg);
+      }
+    }
+  }
+}
+
+.menu__frame {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu {
+  padding: 30px 30px 0 30px;
+
+  &__bottom {
+    padding: 0 30px 30px 30px;
+  }
+
   &__link {
-    position: relative;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: white;
+    color: $primaryColor;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 
     &:hover,
     &:focus {
       color: $accentColor;
     }
+  }
 
-    &::after {
-      content: '';
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 
-      position: absolute;
-      top: 0;
-      left: calc(100% + 8px);
+    & > li {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
-      display: block;
-      height: 100%;
-      width: 1px;
+    &--link {
+      color: $primaryColor;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
 
-      background-color: white;
+      &:hover,
+      &:focus {
+        color: $accentColor;
+      }
+    }
+  }
+
+  &__social-net {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > li {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+        ::after {
+          display: none;
+        }
+      }
+    }
+
+    &--link {
+      position: relative;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $accentColor;
+      }
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: calc(100% + 8px);
+
+        display: block;
+        height: 100%;
+        width: 1px;
+
+        background-color: $primaryColor;
+      }
     }
   }
 }
