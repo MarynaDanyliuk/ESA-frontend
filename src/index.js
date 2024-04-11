@@ -1,6 +1,7 @@
 import './js/refs';
 import './js/burgerMenu';
 import './js/submit';
+import './js/modal';
 
 // import './firebase/fb_config';
 // import './firebase/fb_auth';
@@ -15,4 +16,3 @@ import './js/submit';
 // import './js/searchByQuery';
 // import './js/pagination';
 // import './js/genres';
-// import './js/modal';
