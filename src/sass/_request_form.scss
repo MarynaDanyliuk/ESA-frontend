@@ -2,6 +2,8 @@
   width: 100%;
 
   font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 
   display: flex;
   justify-content: center;
@@ -45,9 +47,6 @@
   }
 
   &__label {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     color: $textColor;
 
     &:active &__input {
@@ -77,15 +76,6 @@
       cursor: pointer;
       border: 1px solid $accentColor;
     }
-
-    // &:invalid {
-    //   border: 2px solid red;
-    //   // box-shadow: 0 0 5px 1px red;
-    // }
-    // &:focus:valid {
-    //   border: 2px solid green;
-    //   // box-shadow: 0 0 5px 1px green;
-    // }
   }
 
   &__input-icon {
@@ -93,6 +83,7 @@
     z-index: 1;
     top: 15px;
     left: 8px;
+    fill: $secondBgColor;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -137,12 +128,6 @@
       border: 1px solid $accentColor;
     }
   }
-
-  //   &__label--comment {
-  //     font-size: 14px;
-  //     line-height: 20px;
-  //     color: $accentColor;
-  //   }
 }
 
 .checkbox {
@@ -164,13 +149,21 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
-    // justify-content: space-between;
-
-    // width: 370px;
-    font-size: 12px;
-    line-height: 1.16;
     cursor: pointer;
+
+    // width: max-content;
+
+    @media screen and (min-width: $widthDesktop) {
+      line-height: 1.71;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 30%;
+    text-align: start;
   }
 
   &__icon-check {
@@ -202,27 +195,15 @@
     color: $accentColor;
     text-decoration: underline;
   }
-
-  @media screen and (min-width: $widthDesktop) {
-    &__label {
-      //   width: 425px;
-      font-size: 14px;
-      line-height: 1.71;
-    }
-  }
 }
 
-// .status,
-// .category {
-//   display: flex;
+.address {
+  padding: 12px;
+}
 
-//   height: 40px;
-//   padding: 16px 8px;
-//   margin-bottom: 10px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   background-color: #ffffff;
-// }
+.agreement {
+  width: 70%;
+}
 
 .form_checkbox,
 .status,
@@ -315,3 +296,24 @@
     }
   }
 }
+
+// &:invalid {
+//   border: 2px solid red;
+//   // box-shadow: 0 0 5px 1px red;
+// }
+// &:focus:valid {
+//   border: 2px solid green;
+//   // box-shadow: 0 0 5px 1px green;
+// }
+
+// .status,
+// .category {
+//   display: flex;
+
+//   height: 40px;
+//   padding: 16px 8px;
+//   margin-bottom: 10px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   background-color: #ffffff;
+// }
