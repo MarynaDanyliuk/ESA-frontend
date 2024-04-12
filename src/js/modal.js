@@ -1,11 +1,7 @@
 import { refs } from './refs';
 
-// __________ open, close, clear Modal__________________
-
-const productCards = document.querySelectorAll('.portfolio-card');
-
-if (productCards.length > 0) {
-  productCards.forEach(product => {
+if (refs.products.length > 0) {
+  refs.products.forEach(product => {
     const overlay = product.querySelector('.portfolio-card__overlay');
 
     overlay.addEventListener('click', event => {
@@ -14,35 +10,30 @@ if (productCards.length > 0) {
       overlay.classList.remove('active__link'); // Змінено з active_link на active__link
     });
 
-    product.addEventListener('click', openModal);
+    product.addEventListener('click', showOverlay);
   });
 }
 
-export function openModal(event) {
+export function showOverlay(event) {
   event.preventDefault();
 
   const product = event.currentTarget;
 
   const overlayElement = product.querySelector('p.portfolio-card__overlay');
 
-  console.log(overlayElement);
-
   overlayElement.classList.add('active__link');
 
   if ('ontouchstart' in window || navigator.maxTouchPoints) {
     event.preventDefault();
-
-    console.log('тут має відкриватись overlay по тачскріну');
-    const product = event.currentTarget;
-
-    const overlayElement = product.querySelector('p.portfolio-card__overlay');
-
-    console.log(overlayElement);
-
     overlayElement.classList.add('active__link');
-    // overlayElement.classList.add('active__link');
   }
 }
+
+// console.log('тут має відкриватись overlay по тачскріну');
+// const product = event.currentTarget;
+// const overlayElement = product.querySelector('p.portfolio-card__overlay');
+// console.log(overlayElement);
+// overlayElement.classList.add('active__link');
 
 // const productCards = refs.products;
 
