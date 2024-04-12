@@ -1,68 +1,96 @@
 import { refs } from './refs';
-// import fetchApiMovies from './apiService';
-
-// const FetchApiMovies = new fetchApiMovies();
-
-// export let MovieActiveId = null;
-// let ModalActive = '';
-
-// refs.products.addEventListener(`click`, openModal);
-
-// refs.libraryBtn.addEventListener(`click`, openModalAuth);
-// refs.registerLink.addEventListener('click', openModalAuth);
-// refs.loginLink.addEventListener('click', openModalAuth);
-
-// import { fetchMovieDetailsByIdAndRender } from './fetchAndRender';
-
-// import { auth } from '../firebase/fb_config';
 
 // __________ open, close, clear Modal__________________
 
-const productCards = refs.products;
-
-console.log(productCards);
+const productCards = document.querySelectorAll('.portfolio-card');
 
 if (productCards.length > 0) {
   productCards.forEach(product => {
+    const overlay = product.querySelector('.portfolio-card__overlay');
+
+    overlay.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      overlay.classList.remove('active__link'); // Змінено з active_link на active__link
+    });
+
     product.addEventListener('click', openModal);
   });
 }
 
 export function openModal(event) {
   event.preventDefault();
-  console.log(event.target);
-  if (event.target.nodeName !== `IMG`) {
-    return;
-  }
+
+  const product = event.currentTarget;
+
+  const overlayElement = product.querySelector('p.portfolio-card__overlay');
+
+  console.log(overlayElement);
+
+  overlayElement.classList.add('active__link');
 
   if ('ontouchstart' in window || navigator.maxTouchPoints) {
-    // Забороняємо переход за посиланням
     event.preventDefault();
 
     console.log('тут має відкриватись overlay по тачскріну');
+    const product = event.currentTarget;
 
-    const parentElement = event.target.closest('.portfolio-card');
+    const overlayElement = product.querySelector('p.portfolio-card__overlay');
 
-    // console.log(parentElement);
-
-    const overlayElement = parentElement.querySelector(
-      '.portfolio-card__overlay'
-    );
     console.log(overlayElement);
+
     overlayElement.classList.add('active__link');
+    // overlayElement.classList.add('active__link');
   }
 }
 
-const cardOverlays = refs.overlays;
+// const productCards = refs.products;
 
-if (cardOverlays.length > 0) {
-  cardOverlays.forEach(overlay => {
-    overlay.addEventListener('click', () => {
-      console.log('32');
-      overlay.classList.remove('active__link');
-    });
-  });
-}
+// console.log(productCards);
+
+// if (productCards.length > 0) {
+//   productCards.forEach(product => {
+//     product.addEventListener('click', openModal);
+//   });
+// }
+
+// export function openModal(event) {
+//   event.preventDefault();
+//   console.log(event.target);
+//   if (event.target.nodeName !== `IMG`) {
+//     return;
+//   }
+
+//   if ('ontouchstart' in window || navigator.maxTouchPoints) {
+//     // Забороняємо переход за посиланням
+//     event.preventDefault();
+
+//     console.log('тут має відкриватись overlay по тачскріну');
+
+//     const parentElement = event.target.closest('.portfolio-card');
+
+//     // console.log(parentElement);
+
+//     const overlayElement = parentElement.querySelector(
+//       '.portfolio-card__overlay'
+//     );
+//     console.log(overlayElement);
+//     overlayElement.classList.add('active__link');
+//   }
+// }
+
+// const cardOverlays = refs.overlays;
+
+// if (cardOverlays.length > 0) {
+//   cardOverlays.forEach(overlay => {
+//     overlay.addEventListener('click', () => {
+//       console.log('32');
+//       overlay.classList.remove('active__link');
+//     });
+//   });
+// }
+
+// ___________ Modal close____________
 
 const modalCloseButtons = refs.buttonClose;
 if (modalCloseButtons) {
