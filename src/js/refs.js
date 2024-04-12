@@ -33,4 +33,8 @@ export const refs = {
 
   // _____________Products_______________________
   products: document.querySelectorAll('.portfolio-card'),
+  overlays: document.querySelectorAll('.portfolio-card__overlay'),
+
+  // _______________Utils___________________
+  body: document.querySelector(`body`),
 };

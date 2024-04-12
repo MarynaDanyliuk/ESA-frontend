@@ -18,47 +18,51 @@ import { refs } from './refs';
 
 // __________ open, close, clear Modal__________________
 
+const productCards = refs.products;
+
+console.log(productCards);
+
+if (productCards.length > 0) {
+  productCards.forEach(product => {
+    product.addEventListener('click', openModal);
+  });
+}
+
 export function openModal(event) {
   event.preventDefault();
   console.log(event.target);
-  if (event.target.nodeName !== `LI`) {
+  if (event.target.nodeName !== `IMG`) {
     return;
   }
+
   if ('ontouchstart' in window || navigator.maxTouchPoints) {
     // Забороняємо переход за посиланням
     event.preventDefault();
 
-    // Отримуємо посилання на модальне вікно
-    const modal = document.getElementById('modal');
+    console.log('тут має відкриватись overlay по тачскріну');
 
-    // Показуємо модальне вікно
-    modal.style.display = 'block';
-  }
-  // const user = auth.currentUser;
+    const parentElement = event.target.closest('.portfolio-card');
 
-  // if (!user) {
-  //   refs.modalLogin.classList.add(`open`);
-  // } else if (user) {
+    // console.log(parentElement);
 
-  // MovieActiveId = event.target.getAttribute(`id`);
-
-  // FetchApiMovies.movieId = MovieActiveId;
-  // await fetchMovieDetailsByIdAndRender(MovieActiveId);
-  // refs.modal.classList.add(`open`);
-  // refs.body.classList.add(`lock`);
-  // return MovieActiveId;
-  // }
-  // return MovieActiveId;
-}
-
-const modalProducts = refs.products;
-if (modalProducts) {
-  for (let i = 0; i < products.length; i++) {
-    products[i].addEventListener('click', openModal);
+    const overlayElement = parentElement.querySelector(
+      '.portfolio-card__overlay'
+    );
+    console.log(overlayElement);
+    overlayElement.classList.add('active__link');
   }
 }
 
-console.log(modalProducts);
+const cardOverlays = refs.overlays;
+
+if (cardOverlays.length > 0) {
+  cardOverlays.forEach(overlay => {
+    overlay.addEventListener('click', () => {
+      console.log('32');
+      overlay.classList.remove('active__link');
+    });
+  });
+}
 
 const modalCloseButtons = refs.buttonClose;
 if (modalCloseButtons) {
@@ -92,6 +96,34 @@ function clearModal() {
   refs.movieDescr.innerHTML = '';
 }
 
+// Знайдіть елемент portfolio-card__overlay всередині батьківського елемента
+// if (cardOverlays.length > 0) {
+//   cardOverlays.forEach(overlay => {
+//     overlay.classList.add('active__link');
+//     // overlay.addEventListener('click', () => {
+//     //   overlay.classList.add('active__link');
+//     // });
+//   });
+// }
+
+// Додайте або видаліть клас active для portfolio-card__overlay
+// overlayElement.classList.toggle('active__link');
+
+// const user = auth.currentUser;
+
+// if (!user) {
+//   refs.modalLogin.classList.add(`open`);
+// } else if (user) {
+
+// MovieActiveId = event.target.getAttribute(`id`);
+
+// FetchApiMovies.movieId = MovieActiveId;
+// await fetchMovieDetailsByIdAndRender(MovieActiveId);
+// refs.modal.classList.add(`open`);
+// refs.body.classList.add(`lock`);
+// return MovieActiveId;
+// }
+// return MovieActiveId;
 // _________________Modal Auth___________________
 
 // function openModalAuth(event) {
