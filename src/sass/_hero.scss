@@ -64,7 +64,7 @@
     color: $accentColor;
     padding: 4px 20px;
     border-radius: 45px;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 20px;
     line-height: 1.72;
 
@@ -81,7 +81,7 @@
     }
 
     @media screen and (min-width: $widthDesktop) {
-      font-size: 38px;
+      font-size: 36px;
     }
   }
 
@@ -123,6 +123,7 @@
   }
 
   &__item {
+    // display: inline-block;
     margin-bottom: 20px;
     &:last-child {
       margin-bottom: 0;
@@ -146,6 +147,7 @@
     color: $primaryColor;
     padding: 4px 12px;
     border-radius: 15px;
+    // display: inline-block;
     @media screen and (min-width: $widthTablet) {
       padding: 4px 18px;
       border-radius: 25px;
@@ -155,6 +157,8 @@
   .rotate {
     transform: rotate(-1.5deg); /* змініть кут нахилу за потреби */
     display: inline-block;
+    margin: 0;
+    padding: 0 12px;
     background-color: $primaryColor;
     color: $secondAccentColor;
   }
@@ -215,7 +219,7 @@
 
   .phrase {
     // animation: fadeInOut 3s;
-    animation: moveLeft 3s ease-in-out forwards; /* Рух вліво */
+    animation: moveLeft 2s ease-in-out forwards; /* Рух вліво */
     // animation: spin 4s linear;
     // animation-iteration-count: 1;
     // animation: changeColor 3s infinite;
@@ -226,7 +230,7 @@
     display: inline-block;
     background-color: $primaryColor;
     color: $secondAccentColor;
-    animation: moveRight 3s ease-in-out forwards; /* Рух вліво */
+    animation: moveRight 2s ease-in-out forwards; /* Рух вліво */
   }
 
   // .phrase:hover {

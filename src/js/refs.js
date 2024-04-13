@@ -37,4 +37,5 @@ export const refs = {
 
   // _______________Utils___________________
   body: document.querySelector(`body`),
+  scrollToTopBtn: document.getElementById('scrollToTopBtn'),
 };

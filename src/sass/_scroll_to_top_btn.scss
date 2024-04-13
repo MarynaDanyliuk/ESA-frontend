@@ -1,0 +1,15 @@
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+
+  background-color: $accentColor;
+  color: $primaryColor;
+  width: 44px;
+  height: 44px;
+}
+
+.btn_icon {
+  fill: $primaryColor;
+}
