@@ -86,21 +86,21 @@
   }
 }
 
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+// .icon {
+//   display: inline-block;
+//   width: 20px;
+//   height: 20px;
+//   stroke-width: 0;
+//   stroke: currentColor;
+//   fill: currentColor;
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    stroke: $accentColor;
-    fill: $accentColor;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     cursor: pointer;
+//     stroke: $accentColor;
+//     fill: $accentColor;
+//   }
+// }
 
 .delete {
   position: absolute;
@@ -112,7 +112,8 @@
 .icon_menu {
   width: 20px;
   height: 20px;
-  @media (min-width: $widthTablet) {
+
+  @media (min-width: ($widthTablet + 1px)) {
     display: none;
   }
   &:hover {

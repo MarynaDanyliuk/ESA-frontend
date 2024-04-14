@@ -11,12 +11,12 @@ export const refs = {
   libraryBtnMenu: document.getElementById('library_btn_menu'),
 
   // _______________Modal___________
-  modal: document.querySelector(`.modal`),
-  modalContent: document.querySelector(`.modal-data`),
-  movieImage: document.querySelector('.image-wrap'),
-  movieDescr: document.querySelector('.movie-descr'),
-  buttonClose: document.querySelectorAll(`.modal-close`),
-  modalBackdrop: document.querySelectorAll(`.modal-body`),
+  // modal: document.querySelector(`.modal`),
+  // modalContent: document.querySelector(`.modal-data`),
+  // movieImage: document.querySelector('.image-wrap'),
+  // movieDescr: document.querySelector('.movie-descr'),
+  // buttonClose: document.querySelectorAll(`.modal-close`),
+  // modalBackdrop: document.querySelectorAll(`.modal-body`),
 
   // ______________Header__________________________
   headerNavLinks: document.querySelectorAll('.nav_item'),

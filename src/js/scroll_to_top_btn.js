@@ -1,5 +1,4 @@
 import { refs } from './refs';
-// const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 window.addEventListener('scroll', scrollFunction);
 
