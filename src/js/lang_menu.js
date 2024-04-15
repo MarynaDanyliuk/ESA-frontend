@@ -1,13 +1,13 @@
 // Функція для зміни мови та перекладу тексту
-function changeLanguage(lang) {
-  // Зміна значення атрибута lang для всіх елементів, що потребують перекладу
-  document.querySelectorAll('.translate').forEach(item => {
-    // Отримання текству, що міститься у data-original
-    const originalText = item.getAttribute('data-original');
-    // Зміна текству на переклад
-    item.textContent = translations[lang][originalText];
-  });
-}
+// function changeLanguage(lang) {
+//   // Зміна значення атрибута lang для всіх елементів, що потребують перекладу
+//   document.querySelectorAll('.translate').forEach(item => {
+//     // Отримання текству, що міститься у data-original
+//     const originalText = item.getAttribute('data-original');
+//     // Зміна текству на переклад
+//     item.textContent = translations[lang][originalText];
+//   });
+// }
 
 // Переклади текстів
 const translations = {
