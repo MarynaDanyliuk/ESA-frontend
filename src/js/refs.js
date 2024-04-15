@@ -27,7 +27,7 @@ export const refs = {
   buttonHeaderNav: document.querySelector('.nav_list_button'),
   logo: document.querySelector('.logo'),
   homeBtn: document.getElementById(`home_btn`),
-  libraryBtn: document.getElementById(`library_btn`),
+  // libraryBtn: document.getElementById(`library_btn`),
   signOut: document.getElementById('auth_btn'),
   user: document.querySelector('.user'),
 
