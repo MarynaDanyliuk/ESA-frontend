@@ -1,67 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   // Отримуємо всі посилання мов
-//   const langLinks = document.querySelectorAll('.sub-menu__list a');
-
-//   // Перебираємо кожне посилання
-//   langLinks.forEach(function (link) {
-//     // Додаємо обробник подій для кожного посилання
-//     link.addEventListener('click', function (event) {
-//       // Передаємо клікане посилання
-//       event.preventDefault();
-//       // Отримуємо текст посилання
-//       const lang = this.textContent;
-//       // Встановлюємо мову, наприклад, якщо ви використовуєте фреймворк, ви можете встановити активну мову за допомогою свого інтернаціоналізаційного механізму.
-//       // Тут буде ваш код, який встановлює мову.
-//       console.log('Ви вибрали мову:', lang);
-//     });
-//   });
-// });
-
-// let isMobile = {
-//   Android: function () {
-//     return navigator.userAgent.match(/Android/i);
-//   },
-//   BlackBerry: function () {
-//     return navigator.userAgent.match(/BlackBerry/i);
-//   },
-//   iOS: function () {
-//     return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-//   },
-//   Opera: function () {
-//     return navigator.userAgent.match(/Opera Mini/i);
-//   },
-//   Windows: function () {
-//     return navigator.userAgent.match(/IEMobile/i);
-//   },
-//   any: function () {
-//     return (
-//       isMobile.Android() ||
-//       isMobile.BlackBerry() ||
-//       isMobile.iOS() ||
-//       isMobile.Opera() ||
-//       isMobile.Windows()
-//     );
-//   },
-// };
-// let body = document.querySelector('body');
-// if (isMobile.any()) {
-//   body.classList.add('touch');
-//   let arrow = document.querySelectorAll('.arrow');
-//   for (i = 0; i < arrow.length; i++) {
-//     let thisLink = arrow[i].previousElementSibling;
-//     let subMenu = arrow[i].nextElementSibling;
-//     let thisArrow = arrow[i];
-
-//     thisLink.classList.add('parent');
-//     arrow[i].addEventListener('click', function () {
-//       subMenu.classList.toggle('open');
-//       thisArrow.classList.toggle('active');
-//     });
-//   }
-// } else {
-//   body.classList.add('mouse');
-// }
-
 // Функція для зміни мови та перекладу тексту
 function changeLanguage(lang) {
   // Зміна значення атрибута lang для всіх елементів, що потребують перекладу
@@ -72,17 +8,6 @@ function changeLanguage(lang) {
     item.textContent = translations[lang][originalText];
   });
 }
-
-// // Обробник подій для кліку на перемикач мови
-// document.querySelectorAll('.language-switcher').forEach(item => {
-//   item.addEventListener('click', function (event) {
-//     event.preventDefault();
-//     // Отримання значення мови з атрибута data-lang
-//     const lang = this.getAttribute('data-lang');
-//     // Виклик функції зміни мови
-//     changeLanguage(lang);
-//   });
-// });
 
 // Переклади текстів
 const translations = {
