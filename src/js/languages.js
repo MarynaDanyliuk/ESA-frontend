@@ -21,6 +21,7 @@ const translations = {
 
     'накопичувального ефекту приведуть до цілі':
       'with the help of a cumulative effect',
+    'Замовити послугу': 'Order',
 
     Швидкiсть: 'Speed',
     Якість: 'Quality',
@@ -37,11 +38,17 @@ const translations = {
     'you are popular in the world': 'популярність в світі маєш',
     'Exporting is a discipline for': 'Експорт – дисципліна для',
     'the purposeful and obligatory': 'цілеспрямованих і обов’язкових',
+    'Exporting is a discipline for the purposeful':
+      'Експорт – дисципліна для цілеспрямованих',
+    'and obligatory': 'і обов’язкових',
     'Export - small steps': 'Експорт – маленькі кроки, які',
-    'Export - small steps that will lead to the goal':
-      'Експорт – маленькі кроки, які з допомогою',
     'that will lead to the goal': 'з допомогою накопичувального',
     'with the help of a cumulative effect': 'ефекту приведуть до цілі',
+    'Export - small steps that will lead to the goal':
+      'Експорт – маленькі кроки, які з допомогою',
+    'with the help of a cumulative effect':
+      'накопичувального ефекту приведуть до цілі',
+    Order: 'Замовити послугу',
     Speed: 'Швидкiсть',
     Quality: 'Якість',
     Reliability: 'Надійність',
