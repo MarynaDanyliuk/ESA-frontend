@@ -19,7 +19,11 @@
           <nav class="menu-lang">
             <ul class="menu__list">
               <li>
-                <a href="#" class="nav_item translate">Мова</a>
+                <a>
+                  <svg class="icon-menu nav_item" style="display: block">
+                    <use href="./images/icons.svg#icon-sphere"></use></svg
+                ></a>
+                <!-- <a href="#" class="nav_item translate">Мова</a> -->
                 <ul class="sub-menu__list">
                   <li>
                     <a href="#" class="lang-switcher" data-lang="en">EN</a>
@@ -32,14 +36,16 @@
             </ul>
           </nav>
         </li>
-      </ul>
-      <!-- Burger menu -->
-      <ul class="nav-list">
         <li>
-          <a>
-            <svg class="icon_menu" id="open_burger_btn">
-              <use href="./images/icons.svg#icon-menu"></use></svg
-          ></a>
+          <!-- Burger menu -->
+          <ul class="nav-list">
+            <li>
+              <a>
+                <svg class="icon-menu nav_item" id="open_burger_btn">
+                  <use href="./images/icons.svg#icon-menu"></use></svg
+              ></a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>

@@ -86,22 +86,6 @@
   }
 }
 
-// .icon {
-//   display: inline-block;
-//   width: 20px;
-//   height: 20px;
-//   stroke-width: 0;
-//   stroke: currentColor;
-//   fill: currentColor;
-
-//   &:hover,
-//   &:focus {
-//     cursor: pointer;
-//     stroke: $accentColor;
-//     fill: $accentColor;
-//   }
-// }
-
 .delete {
   position: absolute;
   top: 0;
@@ -109,17 +93,17 @@
   z-index: 5;
 }
 
-.icon_menu {
+.icon-menu {
   width: 20px;
   height: 20px;
+  fill: $primaryColor;
+  cursor: pointer;
 
   @media (min-width: ($widthTablet + 1px)) {
     display: none;
   }
-  &:hover {
-    cursor: pointer;
-    fill: $accentColor;
-    stroke: $accentColor;
+  @media (max-width: $widthTablet) {
+    display: block;
   }
 }
 
@@ -140,6 +124,15 @@
 }
 
 /* Стилі для Menu language */
+// .icon-lang {
+//   width: 18px;
+//   height: 18px;
+//   fill: $primaryColor;
+//   @media (max-width: $widthTablet) {
+//     display: block;
+//   }
+// }
+
 .menu-lang {
   position: relative;
 
@@ -165,9 +158,10 @@
 
   position: absolute; /* Абсолютне позиціонування */
   top: 22px; /* Відступ від верху батьківського елемента */
-  left: 0px; /* Зміщення зліва */
+  left: -14px; /* Зміщення зліва */
   opacity: 0.9;
-  width: 100%;
+  // width: 100%;
+  width: 50px;
 
   display: none;
   padding: 12px 8px;
