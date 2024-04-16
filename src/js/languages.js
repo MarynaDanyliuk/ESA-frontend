@@ -47,6 +47,16 @@ const translations = {
     'Зерно кукурудзи': 'Corn',
     'Кукурудза — одна з найдавніших хлібних рослин на планеті, найбільша зі зернових. Сьогодні ця агрокультура входить до списку основних продовольчих продуктів і вважається разом з рисом та пшеницею одним із «трьох найголовніших хлібів людства». Із зерна кукурудзи отримують борошно, крупу, пластівці, консерви (цукрова кукурудза), крохмаль, етиловий спирт, декстрин, пиво, глюкозу, цукор, патоку, сироп, олію, вітамін Е, аскорбінову та глутамінову кислоти':
       "Corn is one of the oldest bread plants on the planet and the largest of the cereals. Today, it is one of the staple foods and is considered, along with rice and wheat, to be one of the 'three main breads of mankind'. Corn grain is used to produce flour, cereals, flakes, canned food (sweet corn), starch, ethyl alcohol, dextrin, beer, glucose, sugar, molasses, syrup, oil, vitamin E, ascorbic and glutamic acids",
+    'Форма запиту': 'Request form',
+    'Контактні дані:': 'Contacts:',
+    'Статус:': 'Status:',
+    'Коментар:': 'Comment:',
+    'Я погоджуюсь з політикою компанії та надаю згоду на обробку персональних данних':
+      'I agree with the company s policy and consent to the processing of personal data',
+    'Ознайомитись з політикою компанії':
+      'Familiarize yourself with the company s policy',
+    Відправити: 'Send',
+    Країна: 'Country',
   },
   ua: {
     Products: 'Продукція',
@@ -92,6 +102,17 @@ const translations = {
     Corn: 'Зерно кукурудзи',
     "Corn is one of the oldest bread plants on the planet and the largest of the cereals. Today, it is one of the staple foods and is considered, along with rice and wheat, to be one of the 'three main breads of mankind'. Corn grain is used to produce flour, cereals, flakes, canned food (sweet corn), starch, ethyl alcohol, dextrin, beer, glucose, sugar, molasses, syrup, oil, vitamin E, ascorbic and glutamic acids":
       'Кукурудза — одна з найдавніших хлібних рослин на планеті, найбільша зі зернових. Сьогодні ця агрокультура входить до списку основних продовольчих продуктів і вважається разом з рисом та пшеницею одним із «трьох найголовніших хлібів людства». Із зерна кукурудзи отримують борошно, крупу, пластівці, консерви (цукрова кукурудза), крохмаль, етиловий спирт, декстрин, пиво, глюкозу, цукор, патоку, сироп, олію, вітамін Е, аскорбінову та глутамінову кислоти',
+    'Request form': 'Форма запиту',
+    'Contacts:': 'Контактні дані:',
+
+    'Status:': 'Статус:',
+    'Comment:': 'Коментар:',
+    'I agree with the company s policy and consent to the processing of personal data':
+      'Я погоджуюсь з політикою компанії та надаю згоду на обробку персональних данних',
+    'Familiarize yourself with the company s policy':
+      'Ознайомитись з політикою компанії',
+    Send: 'Відправити',
+    Country: 'Країна',
   },
 };
 
