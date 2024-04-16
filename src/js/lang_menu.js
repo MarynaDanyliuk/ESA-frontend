@@ -1,80 +1,32 @@
-// import data from '../languages.json';
-// console.log(data);
-
 import translations from '../js/languages';
 
-// Обробник подій для посилань в меню
+document.addEventListener('DOMContentLoaded', function () {
+  const savedLanguage = localStorage.getItem('language') || 'UA';
+  console.log(savedLanguage);
+
+  translate(savedLanguage);
+});
+
 document.querySelectorAll('.lang-switcher').forEach(link => {
   link.addEventListener('click', function (event) {
-    event.preventDefault(); // Зупиняємо перехід за посиланням
+    event.preventDefault();
+
     const lang = this.dataset.lang;
     console.log('select language:', lang); // Отримуємо обрану мову
+    localStorage.setItem('language', lang);
+
     translate(lang); // Викликаємо функцію перекладу з обраною мовою
   });
 });
 
-// Завантаження JSON з перекладами
-async function loadTranslations(lang) {
-  try {
-    const response = await fetch(
-      '/Users/marynadanyliuk/JavaScript/ESA-frontend/src/languages.json'
-    );
-    const data = await response.json();
-    console.log(data); // Додано для перевірки даних
-    return data[lang];
-  } catch (error) {
-    console.error('Error loading translations:', error);
-    throw error; // Пропагуємо помилку для обробки виклику функції
-  }
-}
-
 // Функція для перекладу
 async function translate(lang) {
   try {
-    // Зміна текству згідно вибраної мови
-    // document.querySelector('.nav_item').textContent =
-    //   lang === 'en' ? 'Language' : 'Мова';
-
-    // const translations = {
-    //   en: {
-    //     Продукція: 'Products',
-    //     'Підхід до праці': 'Approach to work',
-    //     'Форма запиту': 'Order form',
-    //     Мова: 'Language',
-    //     'Будуємо мости Довіри': 'Building bridges of trust',
-    //     'З дня в день': 'From day to day',
-    //     'Експорт швидко розвиваєш -': 'You develop exports quickly - ',
-    //     'популярність в світі маєш': 'you are popular in the world',
-    //     Швидкiсть: 'Speed',
-    //     Якість: 'Quality',
-    //     Надійність: 'Reliability',
-    //   },
-    //   ua: {
-    //     Products: 'Продукція',
-    //     'Approach to work': 'Підхід до праці',
-    //     'Order form': 'Форма запиту',
-    //     Language: 'Мова',
-    //     'Building bridges of trust': 'Будуємо мости Довіри',
-    //     'From day to day': 'З дня в день',
-    //     'You develop exports quickly - ': 'Експорт швидко розвиваєш -',
-    //     'you are popular in the world': 'популярність в світі маєш',
-    //     Speed: 'Швидкiсть',
-    //     Quality: 'Якість',
-    //     Reliability: 'Надійність',
-    //   },
-    // };
-
-    // const translations = await loadTranslations(lang);
-
-    console.log(translations);
-
-    // Перекладаємо тексти з класом 'translate'
     document.querySelectorAll('.translate').forEach(item => {
       const originalText = item.textContent.trim(); // Отримуємо оригінальний текст елемента
-      console.log(originalText);
-      // const translatedText = translations[originalText];
+
       const translatedText = translations[lang][originalText];
-      console.log(translatedText); // Знаходимо відповідний переклад в об'єкті translations
+
       if (translatedText) {
         item.textContent = translatedText; // Встановлюємо переклад як вміст елемента
       }
@@ -83,6 +35,58 @@ async function translate(lang) {
     console.error('Error translating:', error);
   }
 }
+
+// import data from '../languages.json';
+// console.log(data);
+// Завантаження JSON з перекладами
+// async function loadTranslations(lang) {
+//   try {
+//     const response = await fetch(
+//       '/Users/marynadanyliuk/JavaScript/ESA-frontend/src/languages.json'
+//     );
+//     const data = await response.json();
+//     console.log(data); // Додано для перевірки даних
+//     return data[lang];
+//   } catch (error) {
+//     console.error('Error loading translations:', error);
+//     throw error; // Пропагуємо помилку для обробки виклику функції
+//   }
+// }
+
+// Зміна текству згідно вибраної мови
+// document.querySelector('.nav_item').textContent =
+//   lang === 'en' ? 'Language' : 'Мова';
+
+// const translations = {
+//   en: {
+//     Продукція: 'Products',
+//     'Підхід до праці': 'Approach to work',
+//     'Форма запиту': 'Order form',
+//     Мова: 'Language',
+//     'Будуємо мости Довіри': 'Building bridges of trust',
+//     'З дня в день': 'From day to day',
+//     'Експорт швидко розвиваєш -': 'You develop exports quickly - ',
+//     'популярність в світі маєш': 'you are popular in the world',
+//     Швидкiсть: 'Speed',
+//     Якість: 'Quality',
+//     Надійність: 'Reliability',
+//   },
+//   ua: {
+//     Products: 'Продукція',
+//     'Approach to work': 'Підхід до праці',
+//     'Order form': 'Форма запиту',
+//     Language: 'Мова',
+//     'Building bridges of trust': 'Будуємо мости Довіри',
+//     'From day to day': 'З дня в день',
+//     'You develop exports quickly - ': 'Експорт швидко розвиваєш -',
+//     'you are popular in the world': 'популярність в світі маєш',
+//     Speed: 'Швидкiсть',
+//     Quality: 'Якість',
+//     Reliability: 'Надійність',
+//   },
+// };
+
+// const translations = await loadTranslations(lang);
 
 // function changeLanguage(lang) {
 //   if (lang === 'en') {
