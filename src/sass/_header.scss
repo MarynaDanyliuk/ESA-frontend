@@ -94,8 +94,8 @@
 }
 
 .icon-menu {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   fill: $primaryColor;
   cursor: pointer;
 
@@ -122,16 +122,6 @@
     width: 152px;
   }
 }
-
-/* Стилі для Menu language */
-// .icon-lang {
-//   width: 18px;
-//   height: 18px;
-//   fill: $primaryColor;
-//   @media (max-width: $widthTablet) {
-//     display: block;
-//   }
-// }
 
 .menu-lang {
   position: relative;
@@ -167,7 +157,6 @@
   padding: 12px 8px;
 
   border-radius: 12px;
-  // border: solid 1px $secondAccentColor;
 }
 
 .menu__list:hover .sub-menu__list {
@@ -190,10 +179,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.hide {
-  display: none;
 }
 
 // .nav_item--current::after {

@@ -57,6 +57,7 @@ const translations = {
       'Familiarize yourself with the company s policy',
     Відправити: 'Send',
     Країна: 'Country',
+    Головна: 'Home',
   },
   ua: {
     Products: 'Продукція',
@@ -113,6 +114,7 @@ const translations = {
       'Ознайомитись з політикою компанії',
     Send: 'Відправити',
     Country: 'Країна',
+    Home: 'Головна',
   },
 };
 
