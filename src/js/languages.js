@@ -58,6 +58,9 @@ const translations = {
     Відправити: 'Send',
     Країна: 'Country',
     Головна: 'Home',
+    Приєднуйтесь: 'Contact us',
+    'Підпишіться на розсилку': 'Subscribe us',
+    Підписатись: 'Subscribe',
   },
   ua: {
     Products: 'Продукція',
@@ -115,6 +118,9 @@ const translations = {
     Send: 'Відправити',
     Country: 'Країна',
     Home: 'Головна',
+    'Contact us': 'Приєднуйтесь',
+    'Subscribe us': 'Підпишіться на розсилку',
+    Subscribe: 'Підписатись',
   },
 };
 
