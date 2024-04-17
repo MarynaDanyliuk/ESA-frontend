@@ -36,6 +36,16 @@ async function translate(lang) {
   }
 }
 
+const subMenus = document.querySelectorAll('.sub-menu__list');
+
+// Додати обробник подій click до кожного елемента підменю
+subMenus.forEach(subMenu => {
+  subMenu.addEventListener('click', () => {
+    // Змінити стиль display на none при кліці
+    subMenu.style.display = 'none';
+  });
+});
+
 // import data from '../languages.json';
 // console.log(data);
 // Завантаження JSON з перекладами
