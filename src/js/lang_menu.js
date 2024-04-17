@@ -1,19 +1,31 @@
 import translations from '../js/languages';
+import { refs } from '../js/refs';
+
+import {
+  saveLanguagePreference,
+  getSavedLanguagePreference,
+  // setLanguage,
+} from '../js/localStorage';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const savedLanguage = localStorage.getItem('language') || 'UA';
+  const savedLanguage = getSavedLanguagePreference() || 'UA';
+  // const savedLanguage = localStorage.getItem('language') || 'UA';
   console.log(savedLanguage);
-
   translate(savedLanguage);
 });
 
-document.querySelectorAll('.lang-switcher').forEach(link => {
+document.querySelector('.icon-menu').addEventListener('click', () => {
+  refs.langMenuList.style.display = 'block';
+});
+
+refs.langSwitcher.forEach(link => {
   link.addEventListener('click', function (event) {
     event.preventDefault();
-
     const lang = this.dataset.lang;
     console.log('select language:', lang); // Отримуємо обрану мову
-    localStorage.setItem('language', lang);
+    saveLanguagePreference(lang);
+    // localStorage.setItem('language', lang);
+    refs.langMenuList.style.display = 'none';
 
     translate(lang); // Викликаємо функцію перекладу з обраною мовою
   });
@@ -22,7 +34,7 @@ document.querySelectorAll('.lang-switcher').forEach(link => {
 // Функція для перекладу
 async function translate(lang) {
   try {
-    document.querySelectorAll('.translate').forEach(item => {
+    refs.translateItems.forEach(item => {
       const originalText = item.textContent.trim(); // Отримуємо оригінальний текст елемента
 
       const translatedText = translations[lang][originalText];
@@ -36,15 +48,27 @@ async function translate(lang) {
   }
 }
 
-const subMenus = document.querySelectorAll('.sub-menu__list');
+// const subMenus = document.querySelectorAll('.sub-menu__list');
 
 // Додати обробник подій click до кожного елемента підменю
-subMenus.forEach(subMenu => {
-  subMenu.addEventListener('click', () => {
-    // Змінити стиль display на none при кліці
-    subMenu.style.display = 'none';
-  });
-});
+// refs.langMenuList.forEach(subMenu => {
+//   subMenu.addEventListener('click', () => {
+//     // Змінити стиль display на none при кліці
+//     subMenu.style.display = 'none';
+//   });
+// });
+
+// document.querySelectorAll('.lang-switcher');
+// document.querySelector('.sub-menu__list');
+//  document.querySelectorAll('.translate');
+
+// document
+//   .querySelector('.menu-lang')
+//   .addEventListener('click', function (event) {
+//     event.preventDefault();
+//     document.querySelector('.sub-menu__list').style('display: bloc');
+
+//   });
 
 // import data from '../languages.json';
 // console.log(data);

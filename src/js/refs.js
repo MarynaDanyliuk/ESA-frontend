@@ -10,6 +10,12 @@ export const refs = {
   closeBurgerBtn: document.getElementById('close_burger_btn'),
   libraryBtnMenu: document.getElementById('library_btn_menu'),
 
+  // ________________Language menu_______________________
+  langSwitcher: document.querySelectorAll('.lang-switcher'),
+  langMenuList: document.querySelector('.sub-menu__list'),
+  translateItems: document.querySelectorAll('.translate'),
+  libraryBtnMenu: document.querySelector('.menu__list'),
+
   // _______________Modal___________
   // modal: document.querySelector(`.modal`),
   // modalContent: document.querySelector(`.modal-data`),
