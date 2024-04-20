@@ -148,24 +148,16 @@
 
   position: absolute; /* Абсолютне позиціонування */
   top: 28px; /* Відступ від верху батьківського елемента */
-  left: 0; /* Зміщення зліва */
+  left: -11px; /* Зміщення зліва */
   opacity: 0.9;
-  // width: 100%;
-  width: 50px;
+
+  width: fit-content;
 
   display: none;
   padding: 12px 8px;
 
   border-radius: 12px;
 }
-
-// .menu__list:hover .sub-menu__list {
-//   display: block;
-// }
-
-// .menu-lang a:hover .sub-menu__list {
-//   display: block;
-// }
 
 .sub-menu__list > li {
   color: $primaryColor;
@@ -184,6 +176,18 @@
     margin-bottom: 0;
   }
 }
+
+.active {
+  display: block;
+}
+
+// .menu__list:hover .sub-menu__list {
+//   display: block;
+// }
+
+// .menu-lang a:hover .sub-menu__list {
+//   display: block;
+// }
 
 // .nav_item--current::after {
 //   content: '';

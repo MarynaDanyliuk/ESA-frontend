@@ -230,49 +230,49 @@
     color: $secondAccentColor;
     animation: moveRight 2s ease-in-out forwards; /* Рух вліво */
   }
-
-  // .phrase:hover {
-  //   animation-name: moveRight; /* При наведенні миші - рух вправо */
-  // }
-
-  // .animated-text {
-  //   animation: changeColor 3s infinite;
-  // }
-
-  // _______________________
-  //   &__thumb {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-around;
-  //   align-items: center;
-  //   @media screen and (min-width: $widthTablet) {
-  //     flex-direction: row-reverse;
-  //   }
-  // }
-
-  // &__image {
-  //   display: block;
-  //   width: 100%;
-  //   max-width: 474px;
-  //   height: 260px;
-
-  //   border-radius: 10px;
-  //   object-fit: cover;
-
-  //   @media screen and (min-width: $widthTablet) {
-  //     width: 474px;
-  //     height: 360px;
-  //   }
-  // }
-
-  // &__image--thumb {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   height: 260px;
-  //   @media screen and (min-width: $widthTablet) {
-  //     height: 360px;
-  //   }
-  // }
 }
+
+// .phrase:hover {
+//   animation-name: moveRight; /* При наведенні миші - рух вправо */
+// }
+
+// .animated-text {
+//   animation: changeColor 3s infinite;
+// }
+
+// _______________________
+//   &__thumb {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   @media screen and (min-width: $widthTablet) {
+//     flex-direction: row-reverse;
+//   }
+// }
+
+// &__image {
+//   display: block;
+//   width: 100%;
+//   max-width: 474px;
+//   height: 260px;
+
+//   border-radius: 10px;
+//   object-fit: cover;
+
+//   @media screen and (min-width: $widthTablet) {
+//     width: 474px;
+//     height: 360px;
+//   }
+// }
+
+// &__image--thumb {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   height: 260px;
+//   @media screen and (min-width: $widthTablet) {
+//     height: 360px;
+//   }
+// }

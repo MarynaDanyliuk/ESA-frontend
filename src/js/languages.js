@@ -61,6 +61,9 @@ const translations = {
     Приєднуйтесь: 'Contact us',
     'Підпишіться на розсилку': 'Subscribe us',
     Підписатись: 'Subscribe',
+    country: 'Country',
+    city: 'City/Port',
+    info: 'Info',
   },
   ua: {
     Products: 'Продукція',
@@ -121,6 +124,9 @@ const translations = {
     'Contact us': 'Приєднуйтесь',
     'Subscribe us': 'Підпишіться на розсилку',
     Subscribe: 'Підписатись',
+    country: 'Країна',
+    city: 'Місто/Порт',
+    info: 'Інфо',
   },
 };
 

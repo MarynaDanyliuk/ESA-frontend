@@ -10,10 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const savedLanguage = getSavedLanguagePreference() || 'UA';
   console.log(savedLanguage);
   translate(savedLanguage);
+  setPlaceholderTranslation(savedLanguage);
 });
 
 document.querySelector('.icon-menu').addEventListener('click', () => {
-  refs.langMenuList.style.display = 'block';
+  if (refs.langMenuList.style.display === 'block') {
+    refs.langMenuList.style.display = 'none';
+  } else {
+    refs.langMenuList.style.display = 'block';
+  }
 });
 
 refs.langSwitcher.forEach(link => {
@@ -25,6 +30,7 @@ refs.langSwitcher.forEach(link => {
     refs.langMenuList.style.display = 'none';
 
     translate(lang); // Викликаємо функцію перекладу з обраною мовою
+    setPlaceholderTranslation(lang);
   });
 });
 
@@ -43,4 +49,15 @@ async function translate(lang) {
   } catch (error) {
     console.error('Error translating:', error);
   }
+}
+
+// Функція для встановлення плейсхолдерів з відповідними перекладами
+function setPlaceholderTranslation(language) {
+  refs.translateItems.forEach(input => {
+    const placeholderKey = input.getAttribute('name');
+    const translatedPlaceholder = translations[language][placeholderKey];
+    if (translatedPlaceholder) {
+      input.setAttribute('placeholder', translatedPlaceholder);
+    }
+  });
 }
