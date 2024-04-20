@@ -13,8 +13,6 @@ document.querySelectorAll('.menu__link').forEach(item => {
     // Закриття випадаючого меню
     refs.mobileMenu.classList.remove('open');
 
-    console.log('123');
-
     // Здійснення плавного переходу до розділу лендінгу
     const targetSectionId = this.getAttribute('href');
     const targetSection = document.querySelector(targetSectionId);

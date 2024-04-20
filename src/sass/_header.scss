@@ -147,8 +147,8 @@
   background-color: $accentColor;
 
   position: absolute; /* Абсолютне позиціонування */
-  top: 22px; /* Відступ від верху батьківського елемента */
-  left: -14px; /* Зміщення зліва */
+  top: 28px; /* Відступ від верху батьківського елемента */
+  left: 0; /* Зміщення зліва */
   opacity: 0.9;
   // width: 100%;
   width: 50px;
@@ -159,9 +159,13 @@
   border-radius: 12px;
 }
 
-.menu__list:hover .sub-menu__list {
-  display: block;
-}
+// .menu__list:hover .sub-menu__list {
+//   display: block;
+// }
+
+// .menu-lang a:hover .sub-menu__list {
+//   display: block;
+// }
 
 .sub-menu__list > li {
   color: $primaryColor;
