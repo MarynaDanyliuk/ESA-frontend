@@ -5,7 +5,7 @@
   "homepage": "https://marynadanyliuk.github.io/ESA-frontend/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build dist/*.html --public-url /ESA-frontend/",
+    "build": "parcel build src/*.html --public-url /ESA-frontend/",
     "start:dev": "nodemon server"
   },
   "repository": {
