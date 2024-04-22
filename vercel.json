@@ -4,14 +4,5 @@
       "src": "src/*.html",
       "use": "@vercel/static-build"
     }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/$1", "status": 200 }
-  ],
-  "github": {
-    "autoAlias": true,
-    "silent": true
-  },
-  "project": "export-service-agency"
+  ]
 }
