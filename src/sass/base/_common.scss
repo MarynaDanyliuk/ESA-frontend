@@ -62,7 +62,7 @@ link {
 }
 
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .container {
@@ -75,15 +75,15 @@ link {
 .title {
   color: $accentColor;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   @media screen and (min-width: $widthDesktop) {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
