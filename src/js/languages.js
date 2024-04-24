@@ -64,6 +64,11 @@ const translations = {
     country: 'Country',
     city: 'City/Port',
     info: 'Info',
+    Логістика: 'Logistics',
+    Автоперевезення: 'Road transportation',
+    Укрзалізниця: 'Ukrzaliznytsia',
+    Контейнери: 'Containers',
+    'Сухий порт Матовці, Словаччина': 'Matovci dry port, Slovakia',
   },
   ua: {
     Products: 'Продукція',
@@ -127,6 +132,11 @@ const translations = {
     country: 'Країна',
     city: 'Місто/Порт',
     info: 'Інфо',
+    Logistics: 'Логістика',
+    'Road transportation': 'Автоперевезення',
+    Ukrzaliznytsia: 'Укрзалізниця',
+    Containers: 'Контейнери',
+    'Matovci dry port, Slovakia': 'Сухий порт Матовці, Словаччина',
   },
 };
 
