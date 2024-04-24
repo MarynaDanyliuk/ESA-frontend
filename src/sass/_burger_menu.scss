@@ -124,11 +124,6 @@
     &:focus {
       transform: scale(1.1);
     }
-
-    // &:hover,
-    // &:focus {
-    //   color: $accentColor;
-    // }
   }
 
   &__contacts {
@@ -201,19 +196,3 @@
     }
   }
 }
-
-// .icon-close {
-//   fill: $primaryColor;
-//   width: 15px;
-//   height: 15px;
-//   &:hover,
-//   &:focus {
-//     fill: $accentColor;
-//   }
-// }
-
-// @media (min-width: 767px) {
-//   .menu-toggle {
-//     display: none;
-//   }
-// }

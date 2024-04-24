@@ -268,7 +268,6 @@
   }
 
   &__form-frame {
-    // padding: 40px;
     display: flex;
     flex-direction: column;
   }
@@ -297,24 +296,3 @@
     }
   }
 }
-
-// &:invalid {
-//   border: 2px solid red;
-//   // box-shadow: 0 0 5px 1px red;
-// }
-// &:focus:valid {
-//   border: 2px solid green;
-//   // box-shadow: 0 0 5px 1px green;
-// }
-
-// .status,
-// .category {
-//   display: flex;
-
-//   height: 40px;
-//   padding: 16px 8px;
-//   margin-bottom: 10px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-//   background-color: #ffffff;
-// }

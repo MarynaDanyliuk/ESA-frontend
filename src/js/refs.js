@@ -7,7 +7,7 @@ export const refs = {
   // ________________Burger menu_______________________
   mobileMenu: document.querySelector('.menu__container'),
   openBurgerBtn: document.getElementById('open_burger_btn'),
-  closeBurgerBtn: document.getElementById('close_burger_btn'),
+  closeBurgerBtn: document.querySelector('.menu-toggle'),
   libraryBtnMenu: document.getElementById('library_btn_menu'),
 
   // ________________Language menu_______________________
@@ -15,14 +15,6 @@ export const refs = {
   langMenuList: document.querySelector('.sub-menu__list'),
   translateItems: document.querySelectorAll('.translate'),
   libraryBtnMenu: document.querySelector('.menu__list'),
-
-  // _______________Modal___________
-  // modal: document.querySelector(`.modal`),
-  // modalContent: document.querySelector(`.modal-data`),
-  // movieImage: document.querySelector('.image-wrap'),
-  // movieDescr: document.querySelector('.movie-descr'),
-  // buttonClose: document.querySelectorAll(`.modal-close`),
-  // modalBackdrop: document.querySelectorAll(`.modal-body`),
 
   // ______________Header__________________________
   headerNavLinks: document.querySelectorAll('.nav_item'),
@@ -32,9 +24,8 @@ export const refs = {
   butttonsLibrary: document.querySelector('.modal-nav'),
   buttonHeaderNav: document.querySelector('.nav_list_button'),
   logo: document.querySelector('.logo'),
-  homeBtn: document.getElementById(`home_btn`),
-  // libraryBtn: document.getElementById(`library_btn`),
-  signOut: document.getElementById('auth_btn'),
+  // homeBtn: document.getElementById(`home_btn`),
+  // signOut: document.getElementById('auth_btn'),
   user: document.querySelector('.user'),
 
   // _____________Products_______________________
