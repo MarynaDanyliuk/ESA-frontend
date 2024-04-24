@@ -69,6 +69,8 @@ const translations = {
     Укрзалізниця: 'Ukrzaliznytsia',
     Контейнери: 'Containers',
     'Сухий порт Матовці, Словаччина': 'Matovci dry port, Slovakia',
+    'Логістика - основний фактор конкурентоспроможності':
+      'Logistics is the main factor of competitiveness',
   },
   ua: {
     Products: 'Продукція',
@@ -137,6 +139,8 @@ const translations = {
     Ukrzaliznytsia: 'Укрзалізниця',
     Containers: 'Контейнери',
     'Matovci dry port, Slovakia': 'Сухий порт Матовці, Словаччина',
+    'Logistics is the main factor of competitiveness':
+      'Логістика - основний фактор конкурентоспроможності',
   },
 };
 
