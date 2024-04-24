@@ -663,6 +663,23 @@ link {
   text-transform: uppercase;
 }
 
+.text {
+  color: #ff6b01;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .text {
+    font-weight: 900;
+    font-size: 22px;
+  }
+}
+
 .portfolio-list {
   display: flex;
   flex-direction: column;

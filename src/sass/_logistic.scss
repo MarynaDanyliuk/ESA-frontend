@@ -12,14 +12,6 @@
 
     justify-content: space-around;
   }
-  // display: grid;
-  // grid-gap: 16px;
-  // justify-content: center;
-
-  // @media screen and (min-width: $widthTablet) {
-  //   grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-  //   grid-gap: 16px;
-  // }
 
   &__item {
     width: 100%;
@@ -29,11 +21,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media screen and (min-width: $widthTablet) {
-      // display: flex;
-      // justify-content: center;
-    }
   }
 
   &__image {
@@ -73,5 +60,20 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+  }
+}
+
+.text {
+  color: $accentColor;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: $widthDesktop) {
+    font-weight: 900;
+    font-size: 22px;
   }
 }
