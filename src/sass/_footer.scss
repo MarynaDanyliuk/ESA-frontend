@@ -1,22 +1,7 @@
-// .footer {
-//   background-color: grey;
-// }
-
-// .footer-content {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 12px;
-//   height: 77px;
-// }
-
 .footer {
-  background-color: grey;
+  background-color: $secondBgColor;
   padding-top: 60px;
-  // padding-bottom: 60px;
-  color: white;
-
-  // margin-bottom: 60px;
+  color: $primaryColor;
 
   &__container {
     display: flex;
@@ -25,6 +10,7 @@
     @media screen and (min-width: $widthTablet) {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     @media screen and (min-width: $widthDesktop) {
@@ -60,19 +46,19 @@
     margin-top: 20px;
   }
 
-  &__contacts {
-    display: flex;
-    flex-direction: column;
-  }
+  // &__contacts {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
   &__link {
     display: inline-block;
-    color: var(--address-txt-contacts);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-top: 9px;
+    color: $primaryColor;
+    margin-left: 9px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -80,6 +66,14 @@
   &__link:hover,
   &__link:focus {
     color: $accentColor;
+  }
+
+  &__sub-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primaryColor;
   }
 
   &__social-net {
@@ -96,13 +90,8 @@
       width: 206px;
     }
 
-    @media screen and (min-width: $widthTablet) {
-      width: 206px;
-    }
-
     @media screen and (min-width: $widthDesktop) {
       display: inline;
-      width: 206px;
       margin-left: 70px;
     }
   }
@@ -113,7 +102,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: white;
+    color: $primaryColor;
     margin-bottom: 20px;
   }
 
@@ -159,8 +148,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
-    // margin-left: auto;
-    // margin-right: auto;
 
     width: 100%;
 
@@ -185,8 +172,7 @@
     gap: 12px;
 
     &::placeholder {
-      color: white;
-      // color: rgba(255, 255, 255, 0.6);
+      color: $primaryColor;
       line-height: 1.25;
     }
 
@@ -200,14 +186,14 @@
     width: 100%;
     height: 45px;
     max-width: 320px;
-    border: 1px solid white;
+    border: 1px solid $primaryColor;
     font-size: 16px;
     // border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 16px;
     background-color: transparent;
-    color: white;
+    color: $primaryColor;
     outline: none;
 
     margin-bottom: 20px;
@@ -225,7 +211,7 @@
   }
 
   &__input::placeholder {
-    color: white;
+    color: $primaryColor;
     opacity: 0.7;
   }
 }
