@@ -43,9 +43,8 @@
 
 .menu__overlay {
   width: auto;
-  height: 360px;
   margin-bottom: 20px;
-  // height: 600px;
+  height: 260px;
   background-image: url(../images/world_w.svg);
 
   background-position: center;
@@ -75,8 +74,6 @@
 
   @media screen and (min-width: $widthDesktop) {
     background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
 
     background-image: url(../images/world_w.svg);
 
@@ -126,35 +123,36 @@
     }
   }
 
-  &__contacts {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  // &__contacts {
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin-bottom: 30px;
 
-    & > li {
-      margin-bottom: 12px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+  //   & > li {
+  //     margin-bottom: 12px;
+  //     &:last-child {
+  //       margin-bottom: 0;
+  //     }
+  //   }
 
-    &--link {
-      color: $primaryColor;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
+  //   &--link {
+  //     color: $primaryColor;
+  //     font-weight: 500;
+  //     font-size: 20px;
+  //     line-height: 1.17;
+  //     letter-spacing: 0.02em;
 
-      &:hover,
-      &:focus {
-        color: $accentColor;
-      }
-    }
-  }
+  //     &:hover,
+  //     &:focus {
+  //       color: $accentColor;
+  //     }
+  //   }
+  // }
 
   &__social-net {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
 
     & > li {
       margin-right: 16px;
@@ -170,10 +168,10 @@
       position: relative;
       display: inline-block;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.22;
       letter-spacing: 0.02em;
-      color: white;
+      color: $primaryColor;
 
       &:hover,
       &:focus {

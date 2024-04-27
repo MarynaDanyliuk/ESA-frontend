@@ -47,8 +47,9 @@
   }
 
   // &__contacts {
-  //   display: flex;
-  //   flex-direction: column;
+  //   // margin-bottom: 10px;
+  //   // display: flex;
+  //   // flex-direction: column;
   // }
 
   &__link {
@@ -69,10 +70,10 @@
   }
 
   &__sub-title {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
     color: $primaryColor;
   }
 
