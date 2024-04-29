@@ -41,10 +41,8 @@ async function translate(lang) {
 
     refs.translateItems.forEach(item => {
       const originalText = item.textContent.trim();
-      // console.log(originalText);
 
       const translatedText = translations[lang][originalText];
-      // console.log(translatedText);
 
       if (translatedText) {
         item.textContent = translatedText; // Встановлюємо переклад як вміст елемента
