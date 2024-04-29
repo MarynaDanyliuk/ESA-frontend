@@ -7,7 +7,7 @@ import {
 } from '../js/localStorage';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const savedLanguage = getSavedLanguagePreference() || 'UA';
+  const savedLanguage = getSavedLanguagePreference() || 'ua';
   console.log(savedLanguage);
   translate(savedLanguage);
   setPlaceholderTranslation(savedLanguage);
@@ -37,10 +37,14 @@ refs.langSwitcher.forEach(link => {
 // Функція для перекладу
 async function translate(lang) {
   try {
+    console.log(lang);
+
     refs.translateItems.forEach(item => {
-      const originalText = item.textContent.trim(); // Отримуємо оригінальний текст елемента
+      const originalText = item.textContent.trim();
+      // console.log(originalText);
 
       const translatedText = translations[lang][originalText];
+      // console.log(translatedText);
 
       if (translatedText) {
         item.textContent = translatedText; // Встановлюємо переклад як вміст елемента

@@ -1,5 +1,6 @@
 const translations = {
   en: {
+    Логістика: 'Logistics',
     Продукція: 'Products',
     'Підхід до праці': 'Approach to work',
     'Форма запиту': 'Order form',
@@ -64,7 +65,6 @@ const translations = {
     country: 'Country',
     city: 'City/Port',
     info: 'Info',
-    Логістика: 'Logistics',
     Автоперевезення: 'Road transportation',
     Укрзалізниця: 'Ukrzaliznytsia',
     Контейнери: 'Containers',

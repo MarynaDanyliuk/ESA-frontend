@@ -1,5 +1,6 @@
-import './js/lang_menu';
 import './js/refs';
+import './js/localStorage';
+import './js/lang_menu';
 import './js/burgerMenu';
 import './js/submit';
 import './js/overlay';
