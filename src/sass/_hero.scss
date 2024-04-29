@@ -9,10 +9,10 @@
   margin-bottom: 70px;
 
   &__overlay {
-    height: 100%;
     background-image: url(../images/world.svg);
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -24,7 +24,6 @@
     }
 
     @media screen and (min-width: $widthTablet) {
-      // background-size: 780px 600px;
       // max-height: 600px;
       // background-image: url(../images/world.svg);
 
