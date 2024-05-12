@@ -6,11 +6,19 @@ import {
   getSavedLanguagePreference,
 } from '../js/localStorage';
 
+const htmlElement = document.querySelector('html');
+
+// Функція для зміни мови
+function switchToLang(lang) {
+  htmlElement.setAttribute('lang', lang);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const savedLanguage = getSavedLanguagePreference() || 'ua';
   console.log(savedLanguage);
   translate(savedLanguage);
   setPlaceholderTranslation(savedLanguage);
+  switchToLang(savedLanguage);
 });
 
 document.querySelector('.icon-menu').addEventListener('click', () => {
@@ -46,6 +54,7 @@ async function translate(lang) {
 
       if (translatedText) {
         item.textContent = translatedText; // Встановлюємо переклад як вміст елемента
+        switchToLang(lang);
       }
     });
   } catch (error) {
