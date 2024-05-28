@@ -52,7 +52,7 @@ const translations = {
     'Контактні дані:': 'Contacts:',
     'Статус:': 'Status:',
     'Коментар:': 'Comment:',
-    'Я погоджуюсь з політикою компанії та надаю згоду на обробку персональних данних':
+    'Я погоджуюсь з політикою компанії та надаю згоду на обробку':
       'I agree with the company s policy and consent to the processing of personal data',
     'Ознайомитись з політикою компанії':
       'Familiarize yourself with the company s policy',
@@ -65,6 +65,7 @@ const translations = {
     country: 'Country',
     city: 'City/Port',
     info: 'Info',
+    'Enter text': 'Enter text',
     Автоперевезення: 'Road transportation',
     Укрзалізниця: 'Ukrzaliznytsia',
     Контейнери: 'Containers',
@@ -72,6 +73,20 @@ const translations = {
     'Логістика - основний фактор конкурентоспроможності':
       'Logistics is the main factor of competitiveness',
     Експорт: 'Export',
+    benefit_1:
+      'FCA price in one click. Request processing within 1 day. ECA verification within 2 weeks (ref link). Increase in shipment volume up to X10 - in one month',
+    benefit_2:
+      'Quality Made in Ukraine. Products of the highest quality, comply with international standards and production processes. ISO 22000, ISO 9001, ISO ... KOSHER, HALAL. With soul and love',
+    benefit_3:
+      'Production on modern equipment, long-standing traditions. Technologies are approved by specialized institutes. Working for the Result with delivery leads to an increase in trust in each other and reputation',
+    product_1:
+      'FCA price in one click. Request processing within 1 day. ECA verification within 2 weeks (ref link). Increase in shipment volume up to X10 - in one month',
+    product_2:
+      'Quality Made in Ukraine. Products of the highest quality, comply with international standards and production processes. ISO 22000, ISO 9001, ISO ... KOSHER, HALAL. With soul and love',
+    product_3:
+      'Production on modern equipment, long-standing traditions. Technologies are approved by specialized institutes. Working for the Result with delivery leads to an increase in trust in each other and reputation',
+    product_4:
+      'Corn is one of the oldest bread plants on the planet and the largest of the cereals. Today, it is one of the staple foods and is considered, along with rice and wheat, to be one of the "three main breads of mankind". Corn grain is used to produce flour, cereals, flakes, canned food (sweet corn), starch, ethyl alcohol, dextrin, beer, glucose, sugar, molasses, syrup, oil, vitamin E, ascorbic and glutamic acids',
   },
   ua: {
     Products: 'Продукція',
@@ -123,7 +138,7 @@ const translations = {
     'Status:': 'Статус:',
     'Comment:': 'Коментар:',
     'I agree with the company s policy and consent to the processing of personal data':
-      'Я погоджуюсь з політикою компанії та надаю згоду на обробку персональних данних',
+      'Я погоджуюсь з політикою компанії та надаю згоду на обробку',
     'Familiarize yourself with the company s policy':
       'Ознайомитись з політикою компанії',
     Send: 'Відправити',
@@ -143,6 +158,21 @@ const translations = {
     'Logistics is the main factor of competitiveness':
       'Логістика - основний фактор конкурентоспроможності',
     Export: 'Експорт',
+    'Enter text': 'Введіть текст',
+    benefit_1:
+      'Ціна FCA в один клік. Обробка запиту 1 доба. Верифікація ЕКА протягом 2 тижнів (реф посилання). Збільшення Об’єму відвантаження до Х10 – за один місяць',
+    benefit_2:
+      'Якість Made in Ukraine. Продукція найвищої якості, відповідає міжнародним стандартам, а також процессам виробництва. ISO 22000, ISO 9001, ISO … KOSHER, HALAL. З душею і любов’ю',
+    benefit_3:
+      'Виробництво на сучасному обладнанні, багаторічні традиції. Технології затвержені профільними інститутами. Робота на Результат з доставкою - веде до збільшення Довіри один до одного і репутації',
+    product_1:
+      'FCA price in one click. Request processing within 1 day. ECA verification within 2 weeks (ref link). Increase in shipment volume up to X10 - in one month',
+    product_2:
+      'Quality Made in Ukraine. Products of the highest quality, comply with international standards and production processes. ISO 22000, ISO 9001, ISO ... KOSHER, HALAL. With soul and love',
+    product_3:
+      'Production on modern equipment, long-standing traditions. Technologies are approved by specialized institutes. Working for the Result with delivery leads to an increase in trust in each other and reputation',
+    product_4:
+      'Кукурудза — одна з найдавніших хлібних рослин на планеті, найбільша зі зернових. Сьогодні ця агрокультура входить до списку основних продовольчих продуктів і вважається разом з рисом та пшеницею одним із «трьох найголовніших хлібів людства». Із зерна кукурудзи отримують борошно, крупу, пластівці, консерви (цукрова кукурудза), крохмаль, етиловий спирт, декстрин, пиво, глюкозу, цукор, патоку, сироп, олію, вітамін Е, аскорбінову та глутамінову кислоти',
   },
 };
 

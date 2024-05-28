@@ -14,7 +14,7 @@ function switchToLang(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const savedLanguage = getSavedLanguagePreference() || 'ua';
+  const savedLanguage = getSavedLanguagePreference() || 'en';
   console.log(savedLanguage);
   translate(savedLanguage);
   setPlaceholderTranslation(savedLanguage);
@@ -48,9 +48,12 @@ async function translate(lang) {
     console.log(lang);
 
     refs.translateItems.forEach(item => {
+      const key = item.getAttribute('data-translate-key');
+      // console.log(key);
       const originalText = item.textContent.trim();
 
-      const translatedText = translations[lang][originalText];
+      const translatedText =
+        translations[lang][originalText] || translations[lang][key];
 
       if (translatedText) {
         item.textContent = translatedText; // Встановлюємо переклад як вміст елемента
@@ -72,3 +75,57 @@ function setPlaceholderTranslation(language) {
     }
   });
 }
+
+// function setTranslationTextByKey(language) {
+//   refs.translateItems.forEach(item => {
+//     // Отримати ключ для перекладу з data-translate-key атрибута
+//     const key = item.getAttribute('data-translate-key');
+//     console.log(key);
+//     const translatedText = translations[language][key];
+//     console.log(translatedText);
+//     // Якщо переклад для цього ключа існує, замінити текст в елементі
+//     if (translatedText) {
+//       item.textContent = translatedText;
+//     }
+//   });
+//   // refs.translateItems.forEach(input => {
+//   //   const placeholderKey = input.getAttribute('name');
+//   //   const translatedPlaceholder = translations[language][placeholderKey];
+//   //   if (translatedPlaceholder) {
+//   //     input.setAttribute('placeholder', translatedPlaceholder);
+//   //   }
+//   // });
+// }
+
+// // Ініціалізуємо i18next
+// i18next
+//   .use(i18nextBrowserLanguageDetector) // Для автоматичного визначення мови користувача
+//   .init({
+//     resources: {
+//       en: {
+//         translation: {
+//           hello: 'Hello, World!',
+//         },
+//       },
+//       fr: {
+//         translation: {
+//           hello: 'Bonjour le monde!',
+//         },
+//       },
+//     },
+//     fallbackLng: 'en', // Мова за замовчуванням
+//   });
+
+// // Функція для зміни мови
+// function changeLanguage(lang) {
+//   i18next.changeLanguage(lang);
+//   updateContent();
+// }
+
+// // Функція для оновлення вмісту сторінки
+// function updateContent() {
+//   document.getElementById('heading').textContent = i18next.t('hello');
+// }
+
+// // Початкове оновлення вмісту сторінки
+// updateContent();
