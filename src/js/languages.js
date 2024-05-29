@@ -80,11 +80,11 @@ const translations = {
     benefit_3:
       'Production on modern equipment, long-standing traditions. Technologies are approved by specialized institutes. Working for the Result with delivery leads to an increase in trust in each other and reputation',
     product_1:
-      'FCA price in one click. Request processing within 1 day. ECA verification within 2 weeks (ref link). Increase in shipment volume up to X10 - in one month',
+      'Wheat flour: Flour made from wheat grains has been used for a long time almost everywhere. It is indispensable in a wide variety of areas, from the kitchen to agriculture, where it is used as a raw material for animal feed. The processes of making bakery products, preparing dough, pasta, dumplings, pies, fritters, pancakes and various sauces also require flour',
     product_2:
-      'Quality Made in Ukraine. Products of the highest quality, comply with international standards and production processes. ISO 22000, ISO 9001, ISO ... KOSHER, HALAL. With soul and love',
+      'Beet sugar, Sugar is one of the most popular products on the world market. Sugar (also called sucrose) is a carbohydrate that occurs naturally in most fruits and vegetables. It is the main product of photosynthesis, the process by which plants convert energy from sunlight into food products such as sugar. Sugar is a general term for a class of sweetening substances used as food ingredients in the food industry. As a natural nutrient, sugar, also known as sucrose, is a vital component of our daily diet',
     product_3:
-      'Production on modern equipment, long-standing traditions. Technologies are approved by specialized institutes. Working for the Result with delivery leads to an increase in trust in each other and reputation',
+      'Healthy, natural sunflower oil is produced from oil type sunflower seeds. Sunflower oil is light in taste and appearance and supplies more Vitamin E than any other vegetable oil. It is a combination of monounsaturated and polyunsaturated fats with low saturated fat levels. The versatility of this healthy oil is recognized by cooks internationally. Sunflower oil is valued for its light taste, frying performance and health benefits.',
     product_4:
       'Corn is one of the oldest bread plants on the planet and the largest of the cereals. Today, it is one of the staple foods and is considered, along with rice and wheat, to be one of the "three main breads of mankind". Corn grain is used to produce flour, cereals, flakes, canned food (sweet corn), starch, ethyl alcohol, dextrin, beer, glucose, sugar, molasses, syrup, oil, vitamin E, ascorbic and glutamic acids',
   },
@@ -166,11 +166,11 @@ const translations = {
     benefit_3:
       'Виробництво на сучасному обладнанні, багаторічні традиції. Технології затвержені профільними інститутами. Робота на Результат з доставкою - веде до збільшення Довіри один до одного і репутації',
     product_1:
-      'FCA price in one click. Request processing within 1 day. ECA verification within 2 weeks (ref link). Increase in shipment volume up to X10 - in one month',
+      'Борошно з зерен пшениці використовується віддавна практично скрізь. Воно незамінне в абсолютно різних сферах, починаючи з кухні і закінчуючи сільським господарством, де служить сировиною для виробництва кормів для тварин. Процеси виготовлення хлібобулочних виробів, приготування тіста, макаронів, пельменів, пирогів, оладок, млинців і різноманітних соусів теж не обходяться без борошна.',
     product_2:
-      'Quality Made in Ukraine. Products of the highest quality, comply with international standards and production processes. ISO 22000, ISO 9001, ISO ... KOSHER, HALAL. With soul and love',
+      'Цукор — один із найпопулярніших продуктів на світовому ринку. Цукор (так звана сахароза) — це вуглевод, який зустрічається в природі в більшості фруктів та овочів. Це основний продукт фотосинтезу, процесу, за допомогою якого рослини перетворюють енергію сонячного світла у харчові продукти, такі як цукор. Цукор — загальний термін для класу підсолоджуючих речовин, що використовуються як харчові інгредієнти в харчовій промисловості. Як натуральна поживна речовина, цукор, також відомий як сахароза, є життєво-важливим компонентом нашого щоденного раціону',
     product_3:
-      'Production on modern equipment, long-standing traditions. Technologies are approved by specialized institutes. Working for the Result with delivery leads to an increase in trust in each other and reputation',
+      'Корисну, натуральну соняшникову олію виробляють з насіння соняшнику олійного типу. Соняшникова олія легка на смак і вигляд та містить більше вітаміну Е, ніж будь-яка інша рослинна олія. Це поєднання мононенасичених і поліненасичених жирів з низьким вмістом насичених жирів. Універсальність цієї корисної олії визнана кулінарами всього світу. Соняшникову олію цінують за її легкий смак, здатність до смаження та користь для здоров"я',
     product_4:
       'Кукурудза — одна з найдавніших хлібних рослин на планеті, найбільша зі зернових. Сьогодні ця агрокультура входить до списку основних продовольчих продуктів і вважається разом з рисом та пшеницею одним із «трьох найголовніших хлібів людства». Із зерна кукурудзи отримують борошно, крупу, пластівці, консерви (цукрова кукурудза), крохмаль, етиловий спирт, декстрин, пиво, глюкозу, цукор, патоку, сироп, олію, вітамін Е, аскорбінову та глутамінову кислоти',
   },
