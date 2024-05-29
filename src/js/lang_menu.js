@@ -14,7 +14,7 @@ function switchToLang(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const savedLanguage = getSavedLanguagePreference() || 'en';
+  const savedLanguage = getSavedLanguagePreference() || 'ua';
   console.log(savedLanguage);
   translate(savedLanguage);
   setPlaceholderTranslation(savedLanguage);
